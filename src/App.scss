@@ -1,0 +1,21 @@
+.header{
+    background: rgb(0,16,36);
+background: linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(29,22,110,1) 0%, rgba(25,58,74,1) 36%, rgb(7, 41, 10) 100%, rgba(0,146,255,1) 100%);
+
+&-main{
+    display: flex;
+    justify-content: space-around;
+    &__end{
+        // display: flex;
+        // justify-content: space-between;
+    
+        &-button{
+            display: flex;
+            align-items: center;
+            background: hsla(138, 27%, 47%, 0.409);
+            color: #fff;
+        }
+    }
+}
+
+}

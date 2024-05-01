@@ -4,9 +4,10 @@ import Container from "./components/container";
 import { Route, Routes, Link } from "react-router-dom";
 import { Flex, Button } from "antd";
 import { TfiWorld } from "react-icons/tfi";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { RiGradienterLine, RiMoneyDollarCircleLine } from "react-icons/ri";
 import { TbCoinBitcoin } from "react-icons/tb";
-import { Content, Footer } from "antd/es/layout/layout";
+import { Content } from "antd/es/layout/layout";
+import Footer from "./layout/footer";
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
 
@@ -21,14 +22,15 @@ const App = () => {
           <Flex>
                 <nav className="header-main__menu">
 
-                  <TbCoinBitcoin style={{color: "white", size: "100px"}}/>
+                  <TbCoinBitcoin style={{color: "lightskyblue", transform: "scale(2.7)"
+}}/>
 
-                  <Link to={"/"} className="">Функции</Link>
-                  <Link to={"/"} className="">Кошельки</Link>
-                  <Link to={"/"} className="">Участие</Link>
-                  <Link to={"/"} className="">Ресурсы</Link>
-                  <Link to={"/"} className="">Новости</Link>
-                  <Link to={"/"} className="">О BTCA</Link>
+                  <Link className="header-main__menu-link" to={"/"} >Функции</Link>
+                  <Link className="header-main__menu-link" to={"/"} >Кошельки</Link>
+                  <Link className="header-main__menu-link" to={"/"} >Участие</Link>
+                  <Link className="header-main__menu-link" to={"/"} >Ресурсы</Link>
+                  <Link className="header-main__menu-link" to={"/"} >Новости</Link>
+                  <Link className="header-main__menu-link" to={"/"} >О BTCA</Link>
 
                 </nav>
                 
@@ -60,7 +62,7 @@ const App = () => {
         </Routes>
       </Content>
 
-      <Footer />
+     <Footer/>
     </Fragment>
   )
 }

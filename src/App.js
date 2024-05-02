@@ -16,32 +16,33 @@ import Footer from "./layout/footer";
 const App = () => {
   return (
     <Fragment>
-      <header className="header" backgroundColor="">
+      <header className="header" >
         <Container>
           <Flex className="header-main">
-          <Flex>
-                <nav className="header-main__menu">
+            <Flex>
+              <nav className="header-main__menu">
 
-                  <TbCoinBitcoin style={{color: "lightskyblue", transform: "scale(2.7)"
-}}/>
+                <TbCoinBitcoin style={{
+                  color: "lightskyblue", transform: "scale(2.7)"
+                }} />
 
-                  <Link className="header-main__menu-link" to={"/"} >Функции</Link>
-                  <Link className="header-main__menu-link" to={"/"} >Кошельки</Link>
-                  <Link className="header-main__menu-link" to={"/"} >Участие</Link>
-                  <Link className="header-main__menu-link" to={"/"} >Ресурсы</Link>
-                  <Link className="header-main__menu-link" to={"/"} >Новости</Link>
-                  <Link className="header-main__menu-link" to={"/"} >О BTCA</Link>
+                <Link className="header-main__menu-link" to={"/"} >Функции</Link>
+                <Link className="header-main__menu-link" to={"/"} >Кошельки</Link>
+                <Link className="header-main__menu-link" to={"/"} >Участие</Link>
+                <Link className="header-main__menu-link" to={"/"} >Ресурсы</Link>
+                <Link className="header-main__menu-link" to={"/"} >Новости</Link>
+                <Link className="header-main__menu-link" to={"/"} >О BTCA</Link>
 
-                </nav>
-                
-          </Flex>
-          <Flex className="header-main__end">
+              </nav>
 
-                  <Button className="header-main__end-button" icon={<TfiWorld style={{ color: "white" }} />}>Rus</Button>
-                  <Button className="header-main__end-button" backgroundColor="gradients/input70" icon={<RiMoneyDollarCircleLine style={{ color: "white", backgroundColor: "orange", borderRadius:"100%" }} />}>10.834</Button>
-             
-             
-          </Flex>
+            </Flex>
+            <Flex className="header-main__end">
+
+              <Button className="header-main__end-button" icon={<TfiWorld style={{ color: "white" }} />}>Rus</Button>
+              <Button className="header-main__end-button" backgroundColor="gradients/input70" icon={<RiMoneyDollarCircleLine style={{ color: "white", backgroundColor: "orange", borderRadius: "100%" }} />}>10.834</Button>
+
+
+            </Flex>
           </Flex>
         </Container>
       </header>
@@ -62,7 +63,7 @@ const App = () => {
         </Routes>
       </Content>
 
-     <Footer/>
+      <Footer />
     </Fragment>
   )
 }

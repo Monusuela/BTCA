@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Container from "../components/container";
+import "./layout.scss";
 import { Button, Col, Flex, Input, Row, Typography} from "antd";
 import { TfiAndroid, TfiApple, TfiLinux } from "react-icons/tfi";
 import { RiWindowsFill } from "react-icons/ri";
@@ -10,27 +11,27 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return(
         <Fragment>
-            <footer>
-                <Container>
-                    <Row>
-                        <Col>
-                        <Title level={2}>rovas</Title>
-                        <Flex>
-                        <Button icon={<TfiAndroid/>}/>
-                        <Button icon={<TfiApple/>}/>
-                        <Button icon={<TfiLinux/>}/>
-                        <Button icon={<RiWindowsFill/>}/>
+            <footer className="Footer">
+                <Container className={Footer}>
+                    <Row className="Footer__widgets">
+                        <Col  className={`Footer__widget Footer__widget--other`} style={{width: "430px"}}>
+                        <Title level={2} className={`Footer__widget`} style={{color: "white"}}>rovas</Title>
+                        <Flex style={{gap: "15px"}}>
+                        <TfiAndroid style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
+                        <TfiApple style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
+                        <TfiLinux  style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
+                        <RiWindowsFill style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
                         </Flex>
-                        <Title level={2}>Никогда не пропускайте обновления</Title>
+                        <Title level={3} className="gradient-text">Никогда не пропускайте обновления</Title>
                         <Flex>
-                            <Input placeholder={"Ваш e-mail"}/>
-                            <Button>Подписаться</Button>
+                            <Input placeholder={"Ваш e-mail"}  className="Footer__widgets-input"/>
+                            <Button className="Footer__widgets-button">Подписаться</Button>
                         </Flex>
-                        <text>BTCA - это децентрализованная, одноранговая валюта с 
-                        открытым исходным кодом, отличающаяся расширенными функциями конфиденциальности</text>
+                        <text className="Footer__winget-link">BTCA - это децентрализованная, одноранговая валюта с 
+                        открытым исходным кодом,  отличающаяся расширенными функциями конфиденциальности</text>
                         </Col>
                         <Col>
-                        <Title level={3} className={`Footer__winget`}>BTCA</Title>
+                        <Title level={3} className={`Footer__winget`} style={{color: "white"}}>BTCA</Title>
                         <ul className={`list-none Footer__widget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Получить PIVX</Link>
@@ -57,7 +58,7 @@ const Footer = () => {
                         </Col>
 
                         <Col>
-                        <Title level={3} className={`Footer__winget`}>Ресурсы</Title>
+                        <Title level={3} className={`Footer__winget`} style={{color: "white"}}>Ресурсы</Title>
                         <ul className={`list-none Footer__widget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Кошельки</Link>
@@ -84,7 +85,7 @@ const Footer = () => {
                         </Col>
 
                         <Col>
-                        <Title level={3} className={`Footer__winget`}>Поддержка</Title>
+                        <Title level={3} className={`Footer__winget`} style={{color: "white"}}>Поддержка</Title>
                         <ul className={`list-none Footer__widget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Руководства</Link>
@@ -101,9 +102,12 @@ const Footer = () => {
                         </ul>
                         </Col>
                     </Row>
+                    <Flex className="Footer__winget-end">
+                <text className="Footer__winget-link"> 2019-2021 BTCA Community & BTCA Foundation</text>
+                <text className="Footer__winget-link">Created by BTCA Community</text>
+                </Flex>
                 </Container>
-                <text>© 2019-2021 BTCA Community & BTCA Foundation</text>
-                <text>Created by BTCA Community</text>
+                
             </footer>
         </Fragment>
     )

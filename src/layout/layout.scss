@@ -1,0 +1,63 @@
+.Footer{
+    
+    background: #151822;
+    padding: 40px 150px 25px 100px;
+
+    &__widgets{
+        gap: 50px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #000000;
+        
+
+        &-input{
+                width: 426px ;
+                height: 44px;
+                border-radius: 8px;
+                background-color: rgb(51, 49, 49);
+                
+                padding-left: 15px;
+            
+            
+        }
+
+        &-button{
+            margin-left: -120px;
+            border-radius: 90px;
+            background-color: #1D9A6D;
+            color: white;
+            margin-top: 6px;
+        }
+
+
+        .gradient-text {
+            color:  white ;
+          }
+
+        
+
+        
+
+        
+      
+    }
+    
+
+    
+}
+
+.Footer__winget{
+    
+
+    &-end{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        
+    }
+
+    &-link{
+        color: #ADADAD;
+        text-decoration: none;
+    }
+}

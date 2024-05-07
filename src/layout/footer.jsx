@@ -16,7 +16,7 @@ const Footer = () => {
                     <Row className="Footer__widgets">
                         <Col  className={`Footer__widget Footer__widget--other`} style={{width: "430px"}}>
                         <Title level={2} className={`Footer__widget`} style={{color: "white"}}>rovas</Title>
-                        <Flex style={{gap: "15px"}}>
+                        <Flex style={{gap: "20px", paddingTop: "25px", paddingBottom: "25px"}}>
                         <TfiAndroid style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
                         <TfiApple style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
                         <TfiLinux  style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
@@ -32,7 +32,7 @@ const Footer = () => {
                         </Col>
                         <Col>
                         <Title level={3} className={`Footer__winget`} style={{color: "white"}}>BTCA</Title>
-                        <ul className={`list-none Footer__widget-list`}>
+                        <ul className={`list-none Footer__winget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Получить PIVX</Link>
                             </li>
@@ -59,9 +59,9 @@ const Footer = () => {
 
                         <Col>
                         <Title level={3} className={`Footer__winget`} style={{color: "white"}}>Ресурсы</Title>
-                        <ul className={`list-none Footer__widget-list`}>
+                        <ul className={`list-none Footer__winget-list`}>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Кошельки</Link>
+                                <Link to={"#"} className="Footer__winget-link" >Кошельки</Link>
                             </li>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Coin Specs</Link>
@@ -86,7 +86,7 @@ const Footer = () => {
 
                         <Col>
                         <Title level={3} className={`Footer__winget`} style={{color: "white"}}>Поддержка</Title>
-                        <ul className={`list-none Footer__widget-list`}>
+                        <ul className={`list-none Footer__winget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Руководства</Link>
                             </li>

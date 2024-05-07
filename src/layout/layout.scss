@@ -1,63 +1,74 @@
-.Footer{
-    
-    background: #151822;
-    padding: 40px 150px 25px 100px;
+.Footer {
 
-    &__widgets{
-        gap: 50px;
+    background: #151822;
+    padding: 40px 150px 25px 120px;
+
+    &__widgets {
+        gap: 170px;
         padding-bottom: 25px;
         border-bottom: 2px solid #000000;
-        
 
-        &-input{
-                width: 426px ;
-                height: 44px;
-                border-radius: 8px;
-                background-color: rgb(51, 49, 49);
-                
-                padding-left: 15px;
-            
-            
+
+
+
+        &-input {
+            width: 426px;
+            height: 44px;
+            border-radius: 8px;
+            background-color: rgb(51, 49, 49);
+            margin-top: 35px;
+            padding-left: 15px;
+            margin-bottom: 25px;
+
+
         }
 
-        &-button{
+        &-button {
             margin-left: -120px;
             border-radius: 90px;
             background-color: #1D9A6D;
             color: white;
-            margin-top: 6px;
+            margin-top: 41px;
+
         }
 
 
         .gradient-text {
-            color:  white ;
-          }
+            font-size: 24px;
+            background:-webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.881));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-        
 
-        
 
-        
-      
     }
-    
 
-    
+
 }
 
-.Footer__winget{
-    
+.Footer__winget {
 
-    &-end{
+
+    &-end {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 20px;
-        
+
     }
 
-    &-link{
+    &-link {
         color: #ADADAD;
         text-decoration: none;
+        margin-top: 20px;
+        font-size: 14px;
+
     }
+
+    &-list {
+        padding-top: 10px;
+    }
+
+
 }

@@ -43,3 +43,41 @@ text-transform: uppercase;
 
 }
 
+.section__main-1{
+    background-color: #0D111B;
+    height: 1440px;
+    
+
+    .banner{
+        top: 200px;
+
+        &-title{
+            font-size: 56px;
+            background:-webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.881));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+
+        &-text{
+            color: #ffffff85;
+            
+        }
+    }
+
+}
+
+.container__left{
+    padding-left: calc((100% - 1415px) / 2);
+    width: 100% !important;
+  }
+  
+  .Home_header_img{
+    flex-grow: 1;
+    text-align: right;
+    
+    
+  }
+
+
+

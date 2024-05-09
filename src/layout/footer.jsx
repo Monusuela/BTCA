@@ -16,6 +16,7 @@ const Footer = () => {
                     <Row className="Footer__widgets">
                         <Col  className={`Footer__widget Footer__widget--other`} style={{width: "430px"}}>
                         <Title level={2} className={`Footer__widget`} style={{color: "white"}}>rovas</Title>
+                        
                         <Flex style={{gap: "20px", paddingTop: "25px", paddingBottom: "25px"}}>
                         <TfiAndroid style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
                         <TfiApple style={{background: "#151822", color:"#636D85", transform: "scale(1.8)"}}/>
@@ -25,13 +26,14 @@ const Footer = () => {
                         <Title level={3} className="gradient-text">Никогда не пропускайте обновления</Title>
                         <Flex>
                             <Input placeholder={"Ваш e-mail"}  className="Footer__widgets-input"/>
-                            <Button className="Footer__widgets-button">Подписаться</Button>
+                            <Button className="Footer__widgets-button"><Link>Подписаться</Link></Button>
                         </Flex>
                         <text className="Footer__winget-link">BTCA - это децентрализованная, одноранговая валюта с 
                         открытым исходным кодом,  отличающаяся расширенными функциями конфиденциальности</text>
                         </Col>
                         <Col>
                         <Title level={3} className={`Footer__winget`} style={{color: "white"}}>BTCA</Title>
+                       
                         <ul className={`list-none Footer__winget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Получить PIVX</Link>
@@ -59,8 +61,10 @@ const Footer = () => {
 
                         <Col>
                         <Title level={3} className={`Footer__winget`} style={{color: "white"}}>Ресурсы</Title>
+                       
                         <ul className={`list-none Footer__winget-list`}>
                             <li>
+                                
                                 <Link to={"#"} className="Footer__winget-link" >Кошельки</Link>
                             </li>
                             <li>
@@ -86,6 +90,7 @@ const Footer = () => {
 
                         <Col>
                         <Title level={3} className={`Footer__winget`} style={{color: "white"}}>Поддержка</Title>
+                        
                         <ul className={`list-none Footer__winget-list`}>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Руководства</Link>

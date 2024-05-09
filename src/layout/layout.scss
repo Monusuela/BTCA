@@ -11,17 +11,20 @@
 
 
 
+
         &-input {
             width: 426px;
             height: 44px;
             border-radius: 8px;
-            background-color: rgb(51, 49, 49);
+            background-color: rgba(51, 49, 49, 0.721);
             margin-top: 35px;
             padding-left: 15px;
             margin-bottom: 25px;
+            border: 1px solid rgba(51, 49, 49, 0.721);
 
 
         }
+
 
         &-button {
             margin-left: -120px;
@@ -29,13 +32,14 @@
             background-color: #1D9A6D;
             color: white;
             margin-top: 41px;
+            border: 1px solid #1D9A6D;
 
         }
 
 
         .gradient-text {
             font-size: 24px;
-            background:-webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.881));
+            background: -webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.881));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -45,9 +49,16 @@
     }
 
 
+
 }
 
+
+
+
 .Footer__winget {
+
+
+
 
 
     &-end {
@@ -56,7 +67,9 @@
         justify-content: space-between;
         padding-top: 20px;
 
+
     }
+
 
     &-link {
         color: #ADADAD;

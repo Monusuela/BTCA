@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Container from "../components/container";
-import { Button, Row, Col, Flex, Input } from "antd";
+import { Button, Row, Col, Flex, Input, Carousel } from "antd";
 import { TfiAndroid, TfiApple, TfiLinux } from "react-icons/tfi";
 import { RiWindowsFill } from "react-icons/ri";
 import Title from "antd/es/typography/Title";
@@ -24,7 +24,7 @@ import Steps1 from "../images/Steps/Steps1.png";
 import Steps2 from "../images/Steps/Steps2.png";
 import Steps3 from "../images/Steps/Steps3.png";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -83,74 +83,96 @@ const Home = () => {
           </Flex>
         </Container>
         <Container>
-          <Swiper
-            style={{ display: "flex" }}
-            spaceBetween={50}
-            slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide>
-              <Flex className="info">
+          <Carousel autoplay style={{display: "flex", paddingLeft: "800px"}}>
+           
+              <Flex className="info" style={{display: "flex"}} >
                 <Col className="info__item">
                   <div>
-                    <p>Защитите свои активы с помощью</p>
+                    <p style={{fontSize: "16px"}}>Защитите свои активы с помощью</p>
                     <Title className="info__item-title">
                       Секретных транзакций
                     </Title>
-                    <p>
+                    <p className="info__item-text">
                       An improbable, overnight rise has established a new token
                       as a blockchain gaming heavyweight.
                     </p>
-                    <Button>
+                    <Button style={{zIndex: "1", marginTop: "15px", 
+                  width: "550px",
+                  fontSize: "18px",
+                  borderRadius: "12px",
+                  padding: "12px 32px",
+                  width: "224px",
+                  height: "54px",
+                  background: "#1D9A6D"
+                }}>
                       <Link> Перейти и получить</Link>
                     </Button>
                   </div>
-                  <img src={world} alt="error" />
+                 <div>
+                 <img src={world} alt="error" style={{marginLeft: "115px", bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
+                 </div>
                 </Col>
               </Flex>
-            </SwiperSlide>
-            <SwiperSlide>
+           
               <Flex className="info">
                 <Col className="info__item">
                   <div>
-                    <p>Помогите зашитить сеть</p>
+                    <p style={{fontSize: "16px"}}>Помогите зашитить сеть</p>
                     <Title className="info__item-title">
                       И получите вознаграждение
                     </Title>
-                    <p>
+                    <p className="info__item-text">
                       An improbable, overnight rise has established a new token
                       as a blockchain gaming heavyweight.
                     </p>
-                    <Button>
+                    <Button style={{zIndex: "1", marginTop: "15px", 
+                  width: "550px",
+                  fontSize: "18px",
+                  borderRadius: "12px",
+                  padding: "12px 32px",
+                  width: "224px",
+                  height: "54px",
+                  background: "#1D9A6D"
+                }}>
                       <Link> Перейти и получить</Link>
                     </Button>
                   </div>
-                  <img src={arrow} alt="error" />
+                  <div>
+                  <img src={arrow} alt="error"  style={{marginLeft: "89px",  bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
+                  </div>
+                  
                 </Col>
               </Flex>
-            </SwiperSlide>
-            <SwiperSlide>
               <Flex className="info">
                 <Col className="info__item">
                   <div>
-                    <p>Быстро. Доступно. Безопасно</p>
+                    <p style={{fontSize: "16px"}}>Быстро. Доступно. Безопасно</p>
                     <Title className="info__item-title">
                       Глобальные транзакции
                     </Title>
-                    <p>
+                    <p className="info__item-text">
                       An improbable, overnight rise has established a new token
                       as a blockchain gaming heavyweight.
                     </p>
-                    <Button>
+                    <Button style={{zIndex: "1", marginTop: "15px", 
+                  width: "550px",
+                  fontSize: "18px",
+                  borderRadius: "12px",
+                  padding: "12px 32px",
+                  width: "224px",
+                  height: "54px",
+                  background: "#1D9A6D"
+                }}>
                       <Link> Перейти и получить</Link>
                     </Button>
                   </div>
-                  <img src={gears} alt="error" />
+                  <div>
+                  <img src={gears} alt="error"  style={{marginLeft: "45px", bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
+                  </div>
+                  
                 </Col>
               </Flex>
-            </SwiperSlide>
-          </Swiper>
+              </Carousel>
         </Container>
       </section>
       <section className="section__main-2">
@@ -281,56 +303,73 @@ const Home = () => {
             </div>
             
           </Flex>
-          <Flex>
+          <Flex style={{marginLeft: "250px"}}>
           <Row className="Steps__Registration">
               <Col className="Registration__getting">
+                <div style={{display: "flex", alignItems: "center"}}>
                 <p className="Registration__getting-text">1 шаг</p>
+                <div style={{width: "330px" , borderBottom:"1px solid #ffffff9f", marginLeft: "15px" , paddingTop: "20px"}}></div>
+                </div>
                 <Title
                   className="Registration__getting-title"
                   style={{ color: "white" }}
                 >
                   Скачайте приложение
                 </Title>
+                <div style={{ bottom: "0px", position: "absolute", right: "0px" }}>
                 <img
                   src={Steps1}
                   alt="error"
                   className="Registration__getting-image"
                 />
+                </div>
+                
                 <Button className="Registration__getting-button">
                   <Link>Перейти</Link>
                 </Button>
               </Col>
               <Col className="Registration__getting">
+              <div style={{display: "flex", alignItems: "center"}}>
                 <p className="Registration__getting-text">2 шаг</p>
+                <div style={{width: "330px" ,borderBottom:"1px solid #ffffff9f",marginLeft: "15px", paddingTop: "20px"}}></div>
+                </div>
                 <Title
                   className="Registration__getting-title"
                   style={{ color: "white" }}
                 >
                   Регестрируйтесь
                 </Title>
+                <div  style={{ bottom: "0px", position: "absolute", right: "0px" }}>
                 <img
                   src={Steps2}
                   alt="error"
-                  className="Registration__getting-image"
+                  className="Registration__getting-image" 
                 />
-                <Button className="Registration__getting-button">
+                </div>
+                
+                <Button className="Registration__getting-button" style={{top:"76px"}}>
                   <Link>Перейти</Link>
                 </Button>
               </Col>
               <Col className="Registration__getting">
+              <div style={{display: "flex", alignItems: "center"}}>
                 <p className="Registration__getting-text">3 шаг</p>
+                <div style={{width: "330px" ,borderBottom:"1px solid #ffffff9f",marginLeft: "15px", paddingTop: "20px"}}></div>
+                </div>
                 <Title
                   className="Registration__getting-title"
                   style={{ color: "white" }}
                 >
                   Пользуйтесь
                 </Title>
-                <img
+                <div style={{bottom: "0px", position: "absolute", right: "0px" }}>
+                <img 
                   src={Steps3}
                   alt="error"
                   className="Registration__getting-image"
                 />
-                <Button className="Registration__getting-button">
+                </div>
+                <Button className="Registration__getting-button"  style={{top:"76px"}}>
                   <Link>Перейти</Link>
                 </Button>
               </Col>

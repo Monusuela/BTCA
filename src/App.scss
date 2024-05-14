@@ -56,9 +56,9 @@
 
         &-title {
             font-size: 56px;
-            background: -webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.881));
+            background: -webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.606));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            // -webkit-text-fill-color: transparent;
 
         }
 
@@ -67,15 +67,33 @@
 
         }
     }
-    
-    .info__item{
+
+    .info__item {
+        background-color: rgb(27, 30, 41);
+        border-radius: 8px;
         width: 353px;
         height: 460px;
         color: #ffffffae;
+        padding-top: 20px;
+        padding-left: 22px;
+        margin-bottom: 50px;
 
-        &-title{
+
+
+        &-title {
             color: #fff;
         }
+
+        &-text {
+            // font-family: var(--font-family);
+            // font-weight: 400;
+            width: 281px;
+            font-size: 16px;
+            line-height: 137%;
+            padding-bottom: 15px;
+            // padding-top: 10px;
+        }
+
     }
 
 }
@@ -123,7 +141,7 @@
         background: linear-gradient(138deg, #fff 0%, rgba(176, 250, 255, 0.293) 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // -webkit-text-fill-color: transparent;
         padding-bottom: 25px;
     }
 
@@ -232,7 +250,7 @@
             background: linear-gradient(138deg, #fff 0%, rgba(176, 250, 255, 0.269) 100%);
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            // -webkit-text-fill-color: transparent;
         }
 
         &-text {
@@ -289,25 +307,25 @@
                 // position: absolute;
                 margin-top: -80px !important;
                 padding-bottom: 10px;
-                
+
                 font-size: 42px;
                 line-height: 102%;
                 text-align: center;
                 background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
                 background-clip: text;
                 -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                // -webkit-text-fill-color: transparent;
             }
 
             &-text {
                 width: 500px;
                 display: flex;
                 justify-content: center;
-               
-               
+
+
                 padding-bottom: 50px;
                 font-family: var(--font-family);
-                
+
                 font-size: 18px;
                 line-height: 178%;
                 text-align: center;
@@ -316,51 +334,86 @@
         }
 
     }
-    &__Registration{
+
+    &__Registration {
         display: flex;
         flex-wrap: nowrap;
         margin-top: 20px;
+        margin-bottom: 50px;
+
+
         // padding-left: 500px;
         // justify-content: center;
         // position: absolute;
         // z-index: 2;
         // flex-direction: column;
         // padding-left: calc((100% - 1015px) / 2);
-        
+
 
         // align-content: center;
-        
+
     }
 
     .Block-area {
         background-image: url(./images/Rectangle.svg);
         border-radius: 28px;
-        width: 1140px;
+        width: 1440px;
         height: 402px;
         margin-top: 100px;
         z-index: 1;
         // align-content: center;
-        margin-right: 600px;
+        margin-left: calc((100% - 90%));
+
+        position: absolute;
+        padding-left: 70px;
+        // margin-left: 50px;
+
+        padding-top: 50px;
+
+
+        &-text {
+            width: 507px;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 178%;
+            color: white;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
 
     }
 }
 
 .Registration__getting {
+    margin-bottom: 30px;
     // display: flex;
     // flex-wrap: wrap;
     margin-left: 10px;
     margin-right: 60px;
     border-radius: 8px;
     width: 400px;
-    height: 300px;
+    height: 242px;
     background-color: #151822;
+    padding-left: 20px;
     // gap: 20px;
-    
-        &-text {
-            color: #fff;
-        }
 
-        
-    
+    &-text {
+        color: #fff;
+        padding-top: 20px;
+
+
+    }
+
+    &-button {
+        z-index: 1;
+        top: 30px;
+        border-radius: 12px;
+        padding: 16px 32px;
+        width: 133px;
+        height: 54px;
+        background-color: #1D9A6D;
+    }
+
 
 }

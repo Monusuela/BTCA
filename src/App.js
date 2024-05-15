@@ -8,7 +8,9 @@ import { RiGradienterLine, RiMoneyDollarCircleLine } from "react-icons/ri";
 import { TbCoinBitcoin } from "react-icons/tb";
 import { Content } from "antd/es/layout/layout";
 import Footer from "./layout/footer";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
+import ProofOfStake from "./pages/ProofOfStake";
+
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
 
@@ -50,9 +52,9 @@ const App = () => {
 
       <Content>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          {/* <Route path="/" element={<Home/>} /> */}
 
-          {/* <Route path="/" element={} /> */}
+          <Route path="/" element={<ProofOfStake/>} />
 
           {/* <Route path="/" element={} /> */}
 

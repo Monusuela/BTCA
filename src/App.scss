@@ -58,7 +58,7 @@
             font-size: 56px;
             background: -webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.606));
             -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
 
         }
 
@@ -141,7 +141,7 @@
         background: linear-gradient(138deg, #fff 0%, rgba(176, 250, 255, 0.293) 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
         padding-bottom: 25px;
     }
 
@@ -250,7 +250,7 @@
             background: linear-gradient(138deg, #fff 0%, rgba(176, 250, 255, 0.269) 100%);
             background-clip: text;
             -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
         }
 
         &-text {
@@ -314,7 +314,7 @@
                 background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
                 background-clip: text;
                 -webkit-background-clip: text;
-                // -webkit-text-fill-color: transparent;
+                -webkit-text-fill-color: transparent;
             }
 
             &-text {
@@ -382,6 +382,13 @@
             padding-bottom: 20px;
         }
 
+        &-title{
+            background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+        }
+
     }
 }
 
@@ -417,3 +424,57 @@
 
 
 }
+
+.section__main-5{
+    background-image: url(./images/Rectangle2.svg);
+    background-color: #0D111B;
+    height: 1240px;
+    margin-top: -2px;
+
+    .banner {
+        top: 200px;
+
+        &-title {
+            font-size: 56px;
+            background: -webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.606));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        &-text {
+            color: #ffffff85;
+
+        }
+    }
+
+    .info__item {
+        background-color: rgb(27, 30, 41);
+        border-radius: 8px;
+        width: 353px;
+        height: 460px;
+        color: #ffffffae;
+        padding-top: 20px;
+        padding-left: 22px;
+        margin-bottom: 50px;
+
+
+
+        &-title {
+            color: #fff;
+        }
+
+        &-text {
+            // font-family: var(--font-family);
+            // font-weight: 400;
+            width: 281px;
+            font-size: 16px;
+            line-height: 137%;
+            padding-bottom: 15px;
+            // padding-top: 10px;
+        }
+
+    }
+
+}
+

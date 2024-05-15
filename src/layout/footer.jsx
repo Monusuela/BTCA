@@ -6,6 +6,9 @@ import { TfiAndroid, TfiApple, TfiLinux } from "react-icons/tfi";
 import { RiWindowsFill } from "react-icons/ri";
 import Title from "antd/es/typography/Title";
 import { Link } from "react-router-dom";
+import ProofOfStake from "../pages/ProofOfStake"
+import { Content } from "antd/es/layout/layout";
+
 
 
 const Footer = () => {
@@ -42,7 +45,7 @@ const Footer = () => {
                                 <Link to={"#"} className="Footer__winget-link">Конфиденциальность Shield</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Продвинутый PoS</Link>
+                                <Link to="../pages/ProofOfStake.jsx" className="Footer__winget-link">Продвинутый PoS</Link>
                             </li>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Холодный Стекинг</Link>
@@ -114,6 +117,8 @@ const Footer = () => {
                 </Container>
                 
             </footer>
+
+            
         </Fragment>
     )
 }

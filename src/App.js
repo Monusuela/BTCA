@@ -52,9 +52,9 @@ const App = () => {
 
       <Content>
         <Routes>
-          {/* <Route path="/" element={<Home/>} /> */}
+          <Route path="/" element={<Home/>} />
 
-          <Route path="/" element={<ProofOfStake/>} />
+          <Route path="/poorOfStake" element={<ProofOfStake/>} />
 
           {/* <Route path="/" element={} /> */}
 

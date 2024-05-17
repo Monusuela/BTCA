@@ -4,6 +4,11 @@ import { Button, Col, Flex, Row } from "antd"
 import Title from "antd/es/skeleton/Title"
 import { Link } from "react-router-dom"
 import chips from "../images/chips.png"
+import Icon1 from "../images/ikon/Frame 118.png"
+import Icon2 from "../images/ikon/Frame 117.png"
+import Icon3 from "../images/ikon/Frame 116.png"
+import Icon4 from "../images/ikon/Frame 115.png"
+import Frame from "../images/Frame.png"
 
 const ProofOfStake = () => {
     return (
@@ -40,7 +45,7 @@ const ProofOfStake = () => {
                         <div>
                             <h1 style={{
                                 color: "#ffffff0e", fontSize: "200px",
-                                zIndex: "2", paddingTop: "610px", paddingLeft: "300px"
+                                zIndex: "2", paddingTop: "560px", paddingLeft: "300px"
                             }}>
                                 Increase
                             </h1>
@@ -52,53 +57,76 @@ const ProofOfStake = () => {
                             height: "543px",
                             background: "rgb(145 140 140 / 15%)",
                            marginLeft: "-950px",
-                           marginTop: "737px",
-                           border: "1px solid white"
+                           marginTop: "690px",
+                           border: "1px solid rgb(145 140 140 / 15%)"
                         }}>
-                           <Row style={{display: "flex", flexWrap: "wrap", color: "white", gap: "70px"}}>
+                           <Row style={{display: "flex", flexWrap: "wrap", color: "white", paddingTop: "25px", paddingLeft: "25px"}}>
                             <Col style={{width: "623px"}}>
-                            <h1>Получить больше Владея малым</h1>
-                            <p>Независимо от того, являетесь ли вы разработчиком, 
+                            <h1 style={{fontSize:"42px"}}>Получить больше Владея малым</h1>
+                            <p style={{fontSize: "16px", width: "500px"}}>Независимо от того, являетесь ли вы разработчиком, 
                                 мерчантом, конечным пользователем или покупателем окон, 
                                 мы приветствуем вас в сообществе BTCA.</p>
                             </Col>
-                            <Col style={{width: "286px"}}>
+                            <Col style={{width: "442px", paddingLeft: "123px"}}>
+                            <div style={{display: "flex"}}>
                             <h1>Согласованное Время Блока</h1>
-                            <img src="" alt="error"/>
-                            <p>Фиксированный интервал между блоками составляет 
+                            <img src={Icon1} alt="error"/>
+                            </div>
+                            <p style={{fontSize: "16px"}}>Фиксированный интервал между блоками составляет 
                                 60 секунд. Протокол времени 2-ой версии значительно 
                                 сокращает разброс фактического интервала между блоками.</p>
                             </Col>
-                            <Col style={{width: "305px"}}>
-                            <h1>Безопасная Сеть</h1>
-                            <img src="" alt="error"/>
-                            <p>Распределенная сеть отдельных узлов обеспечивает проверку каждой 
+                            <Flex style={{gap: "50px"}}>
+                            <Col style={{width: "305px" , Top: "-70px"}}>
+                                <div style={{display: "flex"}}>
+                                <h1>Безопасная Сеть</h1>
+                            <img src={Icon2} alt="error"/>
+                                </div>
+                            
+                            <p style={{fontSize: "16px"}}>Распределенная сеть отдельных узлов обеспечивает проверку каждой 
                                 транзакции и блока, добавляемого в блокчейн, гарантируя, что блоки
                                  и транзакции действительны.</p>
                             </Col>
                             <Col style={{width: "332px"}}>
-                            <h1>Меньшее потребление энергии</h1>
-                            <img src="" alt="error"/>
-                            <p>Фиксированный интервал между блоками составляет 60 секунд. 
+                            <div style={{display: "flex"}}>
+                                <h1>Меньшее потребление энергии</h1>
+                            <img src={Icon3} alt="error"/>
+                            </div>
+                            
+                            <p style={{fontSize: "16px"}}>Фиксированный интервал между блоками составляет 60 секунд. 
                                 Протокол времени 2-ой версии значительно сокращает разброс 
                                 фактического интервала между блоками.</p>
                             </Col>
                             <Col style={{width: "286px"}}>
+                            <div style={{display: "flex"}}>
                             <h1>Честный Стекинг</h1>
-                            <img src="" alt="error"/>
-                            <p>У каждого UTXO есть шанс выиграть ставку 
+                            <img src={Icon4} alt="error"/>
+                            </div>
+                            
+                            <p style={{fontSize: "16px"}}>У каждого UTXO есть шанс выиграть ставку 
                                 с линейным снижением сложности в зависимости от ценности UTXO. </p>
                             </Col>
+                            </Flex>
                            </Row>
 
                         </Flex>
+                       
 
 
                     </Flex>
+                    <Flex>
+                            <img src={Frame} alt="error" 
+                            style={{
+                                marginTop: "-270px"
+                            }} />
+                        </Flex>
 
                 </Container>
 
 
+            </section>
+            <section className="section__main-6">
+                
             </section>
         </Fragment>
     )

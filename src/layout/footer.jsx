@@ -45,7 +45,7 @@ const Footer = () => {
                                 <Link to={"#"} className="Footer__winget-link">Конфиденциальность Shield</Link>
                             </li>
                             <li>
-                                <Link to="../pages/ProofOfStake.jsx" className="Footer__winget-link">Продвинутый PoS</Link>
+                                <Link to="/poorOfStake" className="Footer__winget-link">Продвинутый PoS</Link>
                             </li>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Холодный Стекинг</Link>

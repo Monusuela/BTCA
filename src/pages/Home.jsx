@@ -24,31 +24,25 @@ import Steps1 from "../images/Steps/Steps1.png";
 import Steps2 from "../images/Steps/Steps2.png";
 import Steps3 from "../images/Steps/Steps3.png";
 import { Link } from "react-router-dom";
+import CenterMode from "./slider";
 
 
-// import { Swiper, SwiperSlide } from 'swiper/react';
 
-// // Import Swiper styles
-// import 'swiper/css';
+// function CenterMode() {
+//   const settings = {
+//     className: "center",
+//     centerMode: true,
+//     infinite: true,
+//     centerPadding: "60px",
+//     slidesToShow: 3,
+//     speed: 500
+//   };
 
-// export default () => {
-//   return (
-//     <Swiper
-//       spaceBetween={50}
-//       slidesPerView={3}
-//       onSlideChange={() => console.log('slide change')}
-//       onSwiper={(swiper) => console.log(swiper)}
-//     >
-//       <SwiperSlide>Slide 1</SwiperSlide>
-//       <SwiperSlide>Slide 2</SwiperSlide>
-//       <SwiperSlide>Slide 3</SwiperSlide>
-//       <SwiperSlide>Slide 4</SwiperSlide>
-//       ...
-//     </Swiper>
-//   );
-// };
+//   return(
+    
+//   )
 
-// const swiper = new Swiper(...swiper);
+// }
 
 const Home = () => {
   return (
@@ -83,7 +77,7 @@ const Home = () => {
           </Flex>
         </Container>
         <Container>
-          <Carousel autoplay style={{display: "flex", paddingLeft: "800px"}}>
+          {/* <Carousel autoplay style={{display: "flex", paddingLeft: "800px"}}>
            
               <Flex className="info" style={{display: "flex"}} >
                 <Col className="info__item">
@@ -172,7 +166,10 @@ const Home = () => {
                   
                 </Col>
               </Flex>
-              </Carousel>
+              </Carousel> */}
+              <div>
+                {CenterMode()}
+              </div>
         </Container>
       </section>
       <section className="section__main-2">
@@ -407,6 +404,8 @@ const Home = () => {
         </Container>
       </section>
     </Fragment>
+
+    
   );
 };
 

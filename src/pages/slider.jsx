@@ -10,18 +10,19 @@ import { Link } from "react-router-dom";
 function CenterMode() {
   const settings = {
     className: "center",
-    centerMode: true,
-    infinite: true,
+    centerMode: false ,
+    infinite: false,
     centerPadding: "60px",
-    slidesToShow: 3,
+    slidesToShow: 1,
     speed: 500
   };
   return (
-    <div className="slider-container" style={{display: "flex", justifyTracks: "center"}}>
-       <Slider {...settings} style={{ width: "1200px"}}>
+    <div className="slider-container">
+       <Slider {...settings} style={{ width: "1200px", height: "602px"}}>
     {/* <Carousel autoplay style={{display: "flex", paddingLeft: "800px"}}> */}
            <div className="slick-trake" >
-           <Flex className="info" style={{display: "flex"}} >
+           <Flex className="info"  >
+            <div>
              <Col className="info__item">
                <div>
                  <p style={{fontSize: "16px"}}>Защитите свои активы с помощью</p>
@@ -47,10 +48,8 @@ function CenterMode() {
               <div>
               <img src={world} alt="error" style={{marginLeft: "115px", bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
               </div>
-             </Col>
-           </Flex>
-        
-           <Flex className="info">
+             </Col></div>
+             <div>
              <Col className="info__item">
                <div>
                  <p style={{fontSize: "16px"}}>Помогите зашитить сеть</p>
@@ -77,9 +76,8 @@ function CenterMode() {
                <img src={arrow} alt="error"  style={{marginLeft: "89px",  bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
                </div>
                
-             </Col>
-           </Flex>
-           <Flex className="info">
+             </Col></div>
+             <div>
              <Col className="info__item">
                <div>
                  <p style={{fontSize: "16px"}}>Быстро. Доступно. Безопасно</p>
@@ -107,7 +105,8 @@ function CenterMode() {
                </div>
                
              </Col>
-           </Flex>
+             </div>
+             </Flex>
            {/* </Carousel> */}
            </div>
        </Slider>

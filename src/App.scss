@@ -77,7 +77,7 @@
         padding-top: 20px;
         padding-left: 22px;
         margin-bottom: 50px;
-        margin-left: 300px;
+        margin-left: 200px;
         display: table-caption;
 
 
@@ -356,42 +356,44 @@
 
     }
 
-    .Block-area {
-        background-image: url(./images/Rectangle.svg);
-        border-radius: 28px;
-        width: 1440px;
-        height: 402px;
-        margin-top: 100px;
-        z-index: 1;
-        // align-content: center;
-        margin-left: calc((100% - 90%));
+    
+}
 
-        position: absolute;
-        padding-left: 70px;
-        // margin-left: 50px;
+.Block-area {
+    background-image: url(./images/Rectangle.svg);
+    border-radius: 28px;
+    width: 1440px;
+    height: 402px;
+    margin-top: 100px;
+    z-index: 1;
+    // align-content: center;
+    margin-left: calc((100% - 90%));
 
-        padding-top: 50px;
+    position: absolute;
+    padding-left: 70px;
+    // margin-left: 50px;
+
+    padding-top: 50px;
 
 
-        &-text {
-            width: 507px;
-            font-family: var(--font-family);
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 178%;
-            color: white;
-            padding-top: 15px;
-            padding-bottom: 20px;
-        }
-
-        &-title{
-            background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-        }
-
+    &-text {
+        width: 507px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 178%;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
+
+    &-title{
+        background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+
 }
 
 .Registration__getting {
@@ -489,4 +491,48 @@
 
 .slick-track{
     display: flex;
+}
+
+.slider-container{
+    display: inline-block;
+    // justify-content: center;
+    align-items: normal;
+    height: 500px;
+}
+
+.section__main-7{
+    background-color: #0D111B;
+    height: 1658px;
+    margin-top: -2px;
+}
+
+.Steps__info{
+    &-title{
+                font-family: var(--second-family);
+                margin-top: 50px !important;
+                padding-bottom: 10px;
+
+                font-size: 42px;
+                line-height: 102%;
+                text-align: center;
+                background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    }
+
+    &-text{
+        width: 472px;
+                display: flex;
+                justify-content: center;
+
+
+                padding-bottom: 50px;
+                font-family: var(--font-family);
+
+                font-size: 18px;
+                line-height: 178%;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.662);
+    }
 }

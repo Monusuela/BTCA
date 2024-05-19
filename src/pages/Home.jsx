@@ -396,7 +396,7 @@ const Home = () => {
                     marginLeft: "-160px",
                   }}
                 >
-                  <Link>Подписаться</Link>
+                  <Link to="/subscribe">Подписаться</Link>
                 </Button>
               </Flex>
             </Col>

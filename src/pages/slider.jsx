@@ -18,10 +18,10 @@ function CenterMode() {
   };
   return (
     <div className="slider-container">
-       <Slider {...settings} style={{ width: "1200px", height: "602px"}}>
+       <Slider {...settings}>
     {/* <Carousel autoplay style={{display: "flex", paddingLeft: "800px"}}> */}
-           <div className="slick-trake" >
-           <Flex className="info"  >
+           <div className="slick-trake" style={{ width: "1200px", height: "602px"}} >
+           {/* <Flex className="info"  > */}
             <div>
              <Col className="info__item">
                <div>
@@ -48,7 +48,10 @@ function CenterMode() {
               <div>
               <img src={world} alt="error" style={{marginLeft: "115px", bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
               </div>
-             </Col></div>
+             </Col>
+             </div>
+             {/* </Flex> */}
+             {/* <Flex> */}
              <div>
              <Col className="info__item">
                <div>
@@ -76,7 +79,10 @@ function CenterMode() {
                <img src={arrow} alt="error"  style={{marginLeft: "89px",  bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
                </div>
                
-             </Col></div>
+             </Col>
+             </div>
+             {/* </Flex> */}
+             {/* <Flex> */}
              <div>
              <Col className="info__item">
                <div>
@@ -106,7 +112,8 @@ function CenterMode() {
                
              </Col>
              </div>
-             </Flex>
+             {/* </Flex> */}
+             
            {/* </Carousel> */}
            </div>
        </Slider>
@@ -115,3 +122,4 @@ function CenterMode() {
 }
 
 export default CenterMode;
+

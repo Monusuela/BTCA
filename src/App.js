@@ -11,6 +11,7 @@ import Footer from "./layout/footer";
 import Home from "./pages/Home";
 import ProofOfStake from "./pages/ProofOfStake";
 import Subscribe from "./pages/Subscribe";
+import NotFound from "./pages/NotFound";
 
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
@@ -18,6 +19,7 @@ import Subscribe from "./pages/Subscribe";
 
 
 const App = () => {
+  
   return (
     <Fragment>
       <header className="header" >
@@ -59,7 +61,7 @@ const App = () => {
 
           <Route path="/subscribe" element={<Subscribe/>} />
 
-          {/* <Route path="/" element={} /> */}
+          <Route path={"*"} element={<NotFound/>} />
 
           {/* <Route path="/" element={} /> */}
 

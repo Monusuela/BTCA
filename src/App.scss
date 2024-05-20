@@ -277,7 +277,7 @@
 }
 
 .section__main-4 {
-    height: 1385px;
+    height: 1785px;
 
     .Steps {
         // display: flex;
@@ -489,20 +489,20 @@
     margin-top: -2px;
 }
 
-.slick-track{
-    display: flex;
-}
+// .slick-track{
+//     display: flex;
+// }
 
-.slider-container{
-    display: inline-block;
-    // justify-content: center;
-    align-items: normal;
-    height: 500px;
-}
+// .slider-container{
+//     display: inline-block;
+//     // justify-content: center;
+//     align-items: normal;
+//     height: 500px;
+// }
 
 .section__main-7{
     background-color: #0D111B;
-    height: 1658px;
+    height: 1958px;
     margin-top: -2px;
 }
 
@@ -535,5 +535,12 @@
                 text-align: center;
                 color: rgba(255, 255, 255, 0.662);
     }
+}
+
+.NotFound{
+    background-image: url(https://assets-v2.lottiefiles.com/a/56dc81e0-1187-11ee-a080-17f6d40d9d3a/Gbx9okKFay.png);
+    width: 640px;
+    height: 720px;
+    margin-left: 600px;
 }
 

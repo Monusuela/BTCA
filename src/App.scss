@@ -613,6 +613,7 @@
             border: 1px solid #1D9A6D;
             color: white;
         }
+
         &-button2 {
             background-color: #1A204A;
             border-radius: 37px;
@@ -623,6 +624,7 @@
             border: 1px solid #1A204A;
             color: white;
         }
+
         &-button3 {
             background-color: #1A204A;
             border-radius: 37px;
@@ -633,6 +635,7 @@
             border: 1px solid #1A204A;
             color: white;
         }
+
         &-button4 {
             background-color: #1A204A;
             border-radius: 37px;
@@ -644,7 +647,7 @@
             color: white;
         }
 
-        &-input{
+        &-input {
             width: 470px;
             height: 65px;
             border-radius: 8px;
@@ -658,7 +661,7 @@
     }
 }
 
-.banner_img-2{
+.banner_img-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -728,10 +731,88 @@
 }
 
 
+.casket {
+    border-radius: 16px;
+    width: 1231px;
+    height: 654px;
+    background: rgb(13 13 13 / 15%);
+    border: 1px solid rgb(145 140 140 / 15%);
+    padding-top: 40px;
+    padding-left: 60px;
+
+    &-title {
+        font-size: 42px;
+        background: -webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.606));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-text {
+        color: grey;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    &-img {
+        display: flex;
+        justify-content: end;
+    }
+}
+
 .formm {
     input {
+        background-color: #ffffff21 !important;
+
         &::placeholder {
             color: #fff !important;
+
         }
+    }
+
+    &-text {
+        color: #fff;
+        font-size: 18px;
+        padding-top: 40px;
+    }
+
+    &-text2 {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    &-input {
+        width: 600px;
+        height: 179px;
+        border-radius: 8px;
+        background-color: #ffffff21;
+        color: #fff;
+        margin-top: 10px;
+        padding-left: 15px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(51, 49, 49, 0.721);
+    }
+
+    &-input2 {
+        width: 600px;
+        height: 65px;
+        border-radius: 8px;
+        background-color: #ffffff21;
+        color: #fff;
+        margin-top: 10px;
+        padding-left: 15px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(51, 49, 49, 0.721);
+    }
+
+    &-button {
+        background: #1D9A6D;
+            border-radius: 12px;
+            padding: 10px 24px;
+            width: 134px;
+            height: 50px;
+            font-size: 16px;
+            border: 1px solid #1D9A6D;
+            color: white;
+            margin-top: 20px;
     }
 }

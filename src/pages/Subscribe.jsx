@@ -52,26 +52,17 @@ const Subscribe = () => {
                     </Flex>
                     <Flex className={"container__left"} >
 
-                        <Flex style={{
-                            borderRadius: "16px",
-                            width: "1309px",
-                            height: "654px",
-                            background: "rgb(13 13 13 / 15%)",
-                            border: "1px solid rgb(145 140 140 / 15%)",
-                            paddingTop: "40px",
-                            paddingLeft: "60px"
-                        }}>
+                        <Flex className="casket">
 
                             <Col >
 
-                                <h1 className="banner-title" style={{ width: "740px", fontSize: "42px" }}>Не нашли нужного ответа?</h1>
-                                <p style={{ color: "gray", fontSize: "18px", paddingTop: "20px" }}>Задайте вопрос нам напрямую и мы ответим вам в течении 24 часов</p>
+                                <h1 className="casket-title">Не нашли нужного ответа?</h1>
+                                <p className="casket-text">Задайте вопрос нам напрямую и мы ответим вам в течении 24 часов</p>
 
                                 {SubscribeForm()}
                             </Col>
 
-                            <div
-                                style={{ marginLeft: "63px", marginTop: "120px" }} >
+                            <div className="casket-img">
                                 <img src={handquestion} alt="error"
                                 />
                             </div>

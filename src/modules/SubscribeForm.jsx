@@ -57,7 +57,7 @@ const SubscribeForm = () => {
 
     return (
         <Fragment>
-            <form >
+            <form className="formm" >
                 <p style={{ color: "white", fontSize: "18px", paddingTop: "40px" }}>Ваша почта</p>
                 <Input placeholder={"Начните ввод..."}
                     type="email"

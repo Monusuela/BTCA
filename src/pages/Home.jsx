@@ -300,7 +300,7 @@ const Home = () => {
             </div>
             
           </Flex>
-          <Flex style={{marginLeft: "250px"}}>
+          <Flex className="Regiration">
           <Row className="Steps__Registration">
               <Col className="Registration__getting">
                 <div style={{display: "flex", alignItems: "center"}}>
@@ -373,7 +373,7 @@ const Home = () => {
             </Row>
           </Flex>
           <Flex className="Block-area">
-            <Col>
+            <Col className="Block-main">
               <Title className="Block-area-title">
                 Никогда не пропускайте обновления
               </Title>

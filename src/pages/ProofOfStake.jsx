@@ -189,34 +189,34 @@ const ProofOfStake = () => {
                     </div>
 
                     <Flex className="Block-area">
-                        <Col>
-                            <h1 className="Block-area-title" style={{fontSize: "42px"}}>
-                                Никогда не пропускайте обновления
-                            </h1>
-                            <p className="Block-area-text">
-                                Подпишитесь на информационный бюллетень и будьте первым, кто
-                                получит новейшие оповещения, объявления и обновления о
-                                разработках BTCA.
-                            </p>
-                            <Flex>
-                                <Input
-                                    placeholder={"Ваш e-mail"}
-                                    className="Footer__widgets-input"
-                                    style={{ width: "600px", height: "65px" }}
-                                />
-                                <Button
-                                    className="Footer__widgets-button"
-                                    style={{
-                                        width: "150px",
-                                        height: "50px",
-                                        marginLeft: "-160px",
-                                    }}
-                                >
-                                    <Link to="/subscribe">Подписаться</Link>
-                                </Button>
-                            </Flex>
-                        </Col>
-                    </Flex>
+            <Col className="Block-main">
+              <Title className="Block-area-title">
+                Никогда не пропускайте обновления
+              </Title>
+              <p className="Block-area-text">
+                Подпишитесь на информационный бюллетень и будьте первым, кто
+                получит новейшие оповещения, объявления и обновления о
+                разработках BTCA.
+              </p>
+              <Flex>
+                <Input
+                  placeholder={"Ваш e-mail"}
+                  className="Footer__widgets-input"
+                  style={{ width: "600px", height: "65px" }}
+                />
+                <Button
+                  className="Footer__widgets-button"
+                  style={{
+                    width: "150px",
+                    height: "50px",
+                    marginLeft: "-160px",
+                  }}
+                >
+                  <Link to="/subscribe">Подписаться</Link>
+                </Button>
+              </Flex>
+            </Col>
+          </Flex>
                 </Container>
             </section>
         </Fragment>

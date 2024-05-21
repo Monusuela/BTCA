@@ -19,13 +19,13 @@ function CenterMode() {
   return (
     <div className="slider-container">
       {/* <Slider {...settings}> */}
-      <Carousel autoplay style={{ display: "flex", paddingLeft: "590px" }}>
+      <Carousel autoplay className="Carousel">
         {/* <div className="slick-trake" style={{ width: "1200px", height: "602px" }} > */}
           <Flex className="info"  >
-          <div>
+          <div >
             <Col className="info__item">
               <div>
-                <p style={{ fontSize: "16px" }}>Защитите свои активы с помощью</p>
+                <p className="info__item-text2" >Защитите свои активы с помощью</p>
                 <Title className="info__item-title">
                   Секретных транзакций
                 </Title>
@@ -33,21 +33,12 @@ function CenterMode() {
                   An improbable, overnight rise has established a new token
                   as a blockchain gaming heavyweight.
                 </p>
-                <Button style={{
-                  zIndex: "1", marginTop: "15px",
-                  width: "550px",
-                  fontSize: "18px",
-                  borderRadius: "12px",
-                  padding: "12px 32px",
-                  width: "224px",
-                  height: "54px",
-                  background: "#1D9A6D"
-                }}>
+                <Button className="info__item-button" >
                   <Link> Перейти и получить</Link>
                 </Button>
               </div>
               <div>
-                <img src={world} alt="error" style={{ marginLeft: "115px", bottom: "0px", position: "absolute", borderRadius: "8px" }} />
+                <img src={world} alt="error" className="info__item-world" />
               </div>
             </Col>
           </div>
@@ -56,7 +47,7 @@ function CenterMode() {
           <div>
             <Col className="info__item">
               <div>
-                <p style={{ fontSize: "16px" }}>Помогите зашитить сеть</p>
+                <p className="info__item-text2">Помогите зашитить сеть</p>
                 <Title className="info__item-title">
                   И получите вознаграждение
                 </Title>
@@ -64,21 +55,12 @@ function CenterMode() {
                   An improbable, overnight rise has established a new token
                   as a blockchain gaming heavyweight.
                 </p>
-                <Button style={{
-                  zIndex: "1", marginTop: "15px",
-                  width: "550px",
-                  fontSize: "18px",
-                  borderRadius: "12px",
-                  padding: "12px 32px",
-                  width: "224px",
-                  height: "54px",
-                  background: "#1D9A6D"
-                }}>
+                <Button className="info__item-button">
                   <Link> Перейти и получить</Link>
                 </Button>
               </div>
               <div>
-                <img src={arrow} alt="error" style={{ marginLeft: "89px", bottom: "0px", position: "absolute", borderRadius: "8px" }} />
+                <img src={arrow} alt="error" className="info__item-arrow" />
               </div>
 
             </Col>
@@ -88,7 +70,7 @@ function CenterMode() {
           <div>
             <Col className="info__item">
               <div>
-                <p style={{ fontSize: "16px" }}>Быстро. Доступно. Безопасно</p>
+                <p className="info__item-text2">Быстро. Доступно. Безопасно</p>
                 <Title className="info__item-title">
                   Глобальные транзакции
                 </Title>
@@ -96,21 +78,12 @@ function CenterMode() {
                   An improbable, overnight rise has established a new token
                   as a blockchain gaming heavyweight.
                 </p>
-                <Button style={{
-                  zIndex: "1", marginTop: "15px",
-                  width: "550px",
-                  fontSize: "18px",
-                  borderRadius: "12px",
-                  padding: "12px 32px",
-                  width: "224px",
-                  height: "54px",
-                  background: "#1D9A6D"
-                }}>
+                <Button className="info__item-button">
                   <Link> Перейти и получить</Link>
                 </Button>
               </div>
               <div>
-                <img src={gears} alt="error" style={{ marginLeft: "45px", bottom: "0px", position: "absolute", borderRadius: "8px" }} />
+                <img src={gears} alt="error" className="info__item-gears"  />
               </div>
 
             </Col>

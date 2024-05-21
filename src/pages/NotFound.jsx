@@ -10,15 +10,15 @@ const NotFound = () => {
                 <h1>BTCA - Not Found</h1>
             </Helmet>
           <section className="NotFound">
-              <Container>
-                  <Space align={"center"} className={`NotFound__content`}>
+              <Container className={"NotFound-container"}>
+                  <Space className={`NotFound__content`}>
 
-                      <div >
-                          <Typography.Title level={1} style={{color: "red", fontSize: "90px", paddingTop: "50px"}}>
+                      <div className="NotFound__content" >
+                          <h1 level={1} className="NotFound__content-text1">
                               Not Found 404
-                          </Typography.Title>
+                          </h1>
 
-                          <h1 bodyText={"p"} style={{color: "orange", fontSize: "50px", paddingTop: "400px", paddingLeft: "170px"}}>OOOOO NO!!!!</h1>
+                          <h1 bodyText={"p"} className="NotFound__content-text2" >OOOOO NO!!!!</h1>
                       </div>
                   </Space>
               </Container>

@@ -39,7 +39,7 @@ import CenterMode from "./slider";
 //   };
 
 //   return(
-    
+
 //   )
 
 // }
@@ -51,10 +51,10 @@ const Home = () => {
         <Container className={"container__left"}>
           <Flex className="banner" style={{ color: "#fff" }}>
             <Col span={11} className="banner">
-              <Title className="banner-title" style={{ width: "595px" }}>
+              <Title className="banner-title">
                 Становитесь своим собственным банком
               </Title>
-              <p style={{ width: "550px", fontSize: "18px" }}>
+              <p className="banner-text">
                 Получите свободу, благодаря конфиденциальным, глобальным
                 цифровым деньгам. Становитесь своим собственным банком с полным
                 контролем над своими цифровыми активами.
@@ -63,127 +63,31 @@ const Home = () => {
 
             <div className="Home_header_img">
               <img src={planet} alt="error" />
-              <img
+              <img className="Home_header_img-bitcoin"
                 src={bitcoin}
                 alt="error"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  position: "absolute",
-                  top: "300px",
-                }}
               />
             </div>
           </Flex>
         </Container>
         <Container>
-          {/* <Carousel autoplay style={{display: "flex", paddingLeft: "800px"}}>
-           
-              <Flex className="info" style={{display: "flex"}} >
-                <Col className="info__item">
-                  <div>
-                    <p style={{fontSize: "16px"}}>Защитите свои активы с помощью</p>
-                    <Title className="info__item-title">
-                      Секретных транзакций
-                    </Title>
-                    <p className="info__item-text">
-                      An improbable, overnight rise has established a new token
-                      as a blockchain gaming heavyweight.
-                    </p>
-                    <Button style={{zIndex: "1", marginTop: "15px", 
-                  width: "550px",
-                  fontSize: "18px",
-                  borderRadius: "12px",
-                  padding: "12px 32px",
-                  width: "224px",
-                  height: "54px",
-                  background: "#1D9A6D"
-                }}>
-                      <Link> Перейти и получить</Link>
-                    </Button>
-                  </div>
-                 <div>
-                 <img src={world} alt="error" style={{marginLeft: "115px", bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
-                 </div>
-                </Col>
-              </Flex>
-           
-              <Flex className="info">
-                <Col className="info__item">
-                  <div>
-                    <p style={{fontSize: "16px"}}>Помогите зашитить сеть</p>
-                    <Title className="info__item-title">
-                      И получите вознаграждение
-                    </Title>
-                    <p className="info__item-text">
-                      An improbable, overnight rise has established a new token
-                      as a blockchain gaming heavyweight.
-                    </p>
-                    <Button style={{zIndex: "1", marginTop: "15px", 
-                  width: "550px",
-                  fontSize: "18px",
-                  borderRadius: "12px",
-                  padding: "12px 32px",
-                  width: "224px",
-                  height: "54px",
-                  background: "#1D9A6D"
-                }}>
-                      <Link> Перейти и получить</Link>
-                    </Button>
-                  </div>
-                  <div>
-                  <img src={arrow} alt="error"  style={{marginLeft: "89px",  bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
-                  </div>
-                  
-                </Col>
-              </Flex>
-              <Flex className="info">
-                <Col className="info__item">
-                  <div>
-                    <p style={{fontSize: "16px"}}>Быстро. Доступно. Безопасно</p>
-                    <Title className="info__item-title">
-                      Глобальные транзакции
-                    </Title>
-                    <p className="info__item-text">
-                      An improbable, overnight rise has established a new token
-                      as a blockchain gaming heavyweight.
-                    </p>
-                    <Button style={{zIndex: "1", marginTop: "15px", 
-                  width: "550px",
-                  fontSize: "18px",
-                  borderRadius: "12px",
-                  padding: "12px 32px",
-                  width: "224px",
-                  height: "54px",
-                  background: "#1D9A6D"
-                }}>
-                      <Link> Перейти и получить</Link>
-                    </Button>
-                  </div>
-                  <div>
-                  <img src={gears} alt="error"  style={{marginLeft: "45px", bottom: "0px" , position: "absolute", borderRadius: "8px"}}/>
-                  </div>
-                  
-                </Col>
-              </Flex>
-              </Carousel> */}
-              <div>
-                {CenterMode()}
-              </div>
+
+          <div>
+            {CenterMode()}
+          </div>
         </Container>
       </section>
       <section className="section__main-2">
         <Container>
           <Title
             className="Partners-title"
-            style={{ color: "#ffffff0e", fontSize: "200px", zIndex: "2" }}
           >
             ПАРТНЕРЫ
           </Title>
           <Flex className="Partners">
-            <Col className="Partmers-info">
-              <Title className="Partmers-info-title">Нас поддерживают</Title>
-              <p style={{ fontSize: "18px", lineHeight: "170%" }}>
+            <Col className="Partmers_info">
+              <Title className="Partmers_info-title">Нас поддерживают</Title>
+              <p className="Partmers_info-text">
                 Получите свободу, благодаря конфиденциальным, глобальным
                 цифровым деньгам. Становитесь своим собственным банком с полным
                 контролем над своими цифровыми активами.
@@ -239,43 +143,17 @@ const Home = () => {
                 могли контролировать свои средства.
               </p>
 
-              <Flex
-                style={{
-                  gap: "20px",
-                  paddingTop: "25px",
-                  paddingBottom: "25px",
-                }}
-              >
-                <TfiAndroid
-                  style={{ color: "#636D85", transform: "scale(1.8)" }}
-                />
-                <TfiApple
-                  style={{ color: "#636D85", transform: "scale(1.8)" }}
-                />
-                <TfiLinux
-                  style={{ color: "#636D85", transform: "scale(1.8)" }}
-                />
-                <RiWindowsFill
-                  style={{ color: "#636D85", transform: "scale(1.8)" }}
-                />
+              <Flex className="Wallet_icons"              >
+                <TfiAndroid className="icon" />
+                <TfiApple className="icon" />
+                <TfiLinux className="icon" />
+                <RiWindowsFill className="icon" />
               </Flex>
 
               <Button
                 className="Wallet-button"
-                style={{
-                  marginTop: "15px",
-                  color: "#8886FF",
-                  background: "rgba(255, 255, 255, 0.064)",
-                  border: "1px solid rgba(255, 255, 255, 0.064)",
-                }}
               >
-                <TfiApple
-                  style={{
-                    color: "#636D85",
-                    transform: "scale(1.8)",
-                    marginRight: "20px",
-                  }}
-                />
+                <TfiApple className="icon2" />
                 Скачать кошелек
               </Button>
             </Col>
@@ -289,7 +167,7 @@ const Home = () => {
       <section className="section__main-4">
         <Container>
           <Title className="Steps-title">Ready?</Title>
-          <Flex className="Steps" justify="center">
+          <Flex className="Steps">
             <div>
               <Title className="Steps__info-title">Готовы начать?</Title>
               <p className="Steps__info-text">
@@ -298,75 +176,66 @@ const Home = () => {
                 в сообществе BTCA.
               </p>
             </div>
-            
+
           </Flex>
           <Flex className="Regiration">
-          <Row className="Steps__Registration">
+            <Row className="Steps__Registration">
               <Col className="Registration__getting">
-                <div style={{display: "flex", alignItems: "center"}}>
-                <p className="Registration__getting-text">1 шаг</p>
-                <div style={{width: "330px" , borderBottom:"1px solid #ffffff9f", marginLeft: "15px" , paddingTop: "20px"}}></div>
+                <div className="Registration__getting-1">
+                  <p className="Registration__getting-1-text">1 шаг</p>
+                  <div className="Registration__getting-1-line"></div>
                 </div>
                 <Title
-                  className="Registration__getting-title"
-                  style={{ color: "white" }}
-                >
+                  className="Registration__getting-title1">
                   Скачайте приложение
                 </Title>
-                <div style={{ bottom: "0px", position: "absolute", right: "0px" }}>
-                <img
-                  src={Steps1}
-                  alt="error"
-                  className="Registration__getting-image"
-                />
+                <div className="Registration__getting-image">
+                  <img
+                    src={Steps1}
+                    alt="error"
+                    />
                 </div>
-                
+
                 <Button className="Registration__getting-button">
                   <Link>Перейти</Link>
                 </Button>
               </Col>
               <Col className="Registration__getting">
-              <div style={{display: "flex", alignItems: "center"}}>
-                <p className="Registration__getting-text">2 шаг</p>
-                <div style={{width: "330px" ,borderBottom:"1px solid #ffffff9f",marginLeft: "15px", paddingTop: "20px"}}></div>
+                <div className="Registration__getting-1">
+                  <p className="Registration__getting-1-text">2 шаг</p>
+                  <div className="Registration__getting-1-line"></div>
                 </div>
                 <Title
-                  className="Registration__getting-title"
-                  style={{ color: "white" }}
-                >
+                  className="Registration__getting-title1">
                   Регестрируйтесь
                 </Title>
-                <div  style={{ bottom: "0px", position: "absolute", right: "0px" }}>
-                <img
-                  src={Steps2}
-                  alt="error"
-                  className="Registration__getting-image" 
-                />
+                <div className="Registration__getting-image">
+                  <img
+                    src={Steps2}
+                    alt="error"
+                  />
                 </div>
-                
-                <Button className="Registration__getting-button" style={{top:"76px"}}>
+
+                <Button className="Registration__getting-button2">
                   <Link>Перейти</Link>
                 </Button>
               </Col>
               <Col className="Registration__getting">
-              <div style={{display: "flex", alignItems: "center"}}>
-                <p className="Registration__getting-text">3 шаг</p>
-                <div style={{width: "330px" ,borderBottom:"1px solid #ffffff9f",marginLeft: "15px", paddingTop: "20px"}}></div>
+                <div className="Registration__getting-1">
+                  <p className="Registration__getting-1-text">3 шаг</p>
+                  <div className="Registration__getting-1-line"></div>
                 </div>
                 <Title
-                  className="Registration__getting-title"
-                  style={{ color: "white" }}
-                >
+                  className="Registration__getting-title1">
                   Пользуйтесь
                 </Title>
-                <div style={{bottom: "0px", position: "absolute", right: "0px" }}>
-                <img 
-                  src={Steps3}
-                  alt="error"
-                  className="Registration__getting-image"
-                />
+                <div className="Registration__getting-image">
+                  <img
+                    src={Steps3}
+                    alt="error"
+                  />
                 </div>
-                <Button className="Registration__getting-button"  style={{top:"76px"}}>
+                <Button className="Registration__getting-button2">
                   <Link>Перейти</Link>
                 </Button>
               </Col>
@@ -382,22 +251,17 @@ const Home = () => {
                 получит новейшие оповещения, объявления и обновления о
                 разработках BTCA.
               </p>
-              <Flex>
-                <Input
+              <Flex className="Block-area-2">
+                <Input  className="Block-area-2-input"
                   placeholder={"Ваш e-mail"}
-                  className="Footer__widgets-input"
-                  style={{ width: "600px", height: "65px" }}
-                />
+                  ></Input>
+                <div className="">
                 <Button
-                  className="Footer__widgets-button"
-                  style={{
-                    width: "150px",
-                    height: "50px",
-                    marginLeft: "-160px",
-                  }}
-                >
+                  className="Block-area-2-button"
+                 >
                   <Link to="/subscribe">Подписаться</Link>
                 </Button>
+                </div>
               </Flex>
             </Col>
           </Flex>
@@ -405,7 +269,7 @@ const Home = () => {
       </section>
     </Fragment>
 
-    
+
   );
 };
 

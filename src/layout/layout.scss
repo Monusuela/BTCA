@@ -18,7 +18,8 @@
             width: 426px;
             height: 44px;
             border-radius: 8px;
-            background-color: rgba(51, 49, 49, 0.721);
+            background-color: rgba(51, 49, 49, 0.721) !important;
+            color: #fff !important;
             margin-top: 35px;
             padding-left: 15px;
             margin-bottom: 25px;
@@ -31,7 +32,7 @@
         &-button {
             margin-left: -120px;
             border-radius: 90px;
-            background-color: #1D9A6D;
+            background-color: #1D9A6D !important;
             color: white;
             margin-top: 41px;
             border: 1px solid #1D9A6D;

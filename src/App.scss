@@ -485,10 +485,12 @@
     }
 
     &-title {
-        background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-size: 32px;
+        color: #fff;
+        // background: linear-gradient(138deg, #ffffff 0%, rgba(255, 255, 255, 0.447) 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
     }
 
     &-2 {
@@ -819,9 +821,10 @@
         &__Registretions {
             margin-bottom: 80px;
 
-            
+
         }
-        .Registrations__getting{
+
+        .Registrations__getting {
             margin-bottom: 30px;
             margin-left: 10px;
             margin-right: 60px;
@@ -832,24 +835,24 @@
             padding-left: 30px;
             height: 210px;
 
-            &-title{
+            &-title {
                 color: #fff;
                 font-size: 32px;
                 width: 211px;
                 padding-top: 20px;
             }
 
-            &-text{
+            &-text {
                 font-size: 16px;
                 color: gray;
             }
 
-            &-link{
+            &-link {
                 color: gray;
                 padding-top: 20px;
                 text-align: center;
 
-                &-icon{
+                &-icon {
                     margin-left: 30px;
                 }
             }
@@ -1023,7 +1026,7 @@
     }
 }
 
-.Slider_container{
+.Slider_container {
     width: 1750px;
     padding: 60px, 300px;
     display: flex;
@@ -1032,26 +1035,26 @@
         padding-left: calc((100% - 1415px) / 2);
         width: 100% !important;
 
-        .slider__col{
+        .slider__col {
             width: 500px;
 
-            &-title{
+            &-title {
                 font-size: 42px;
                 color: white;
             }
 
-            &-text{
+            &-text {
                 color: gray;
                 padding-top: 30px;
                 padding-bottom: 15px;
             }
 
-            .slider__col-list{
+            .slider__col-list {
                 font-size: 16px;
                 color: #fff;
                 width: 365px;
 
-                &-li1{
+                &-li1 {
                     background-color: #151822;
                     height: 60px;
                     border-radius: 8px;
@@ -1059,23 +1062,23 @@
                     padding-top: 20px;
                 }
 
-                &-li2{
+                &-li2 {
                     height: 60px;
                     border-radius: 8px;
                     padding-left: 20px;
                     padding-top: 20px;
                 }
-                
+
             }
         }
     }
 
-    #panel{
+    #panel {
         background-color: #1c202b;
         color: #fff;
-        
 
-        &-typography{
+
+        &-typography {
             color: #279D88;
             flex-shrink: 0;
         }

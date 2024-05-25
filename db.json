@@ -1,6 +1,14 @@
 {
-    "profile": {
+    "email": [
+        {
+            "id": "",
+            "email": ""
+        }
+        
+    ],
+    "question":[ {
+        "id": "",
         "email": "",
         "text": ""
-    }
+    }]
 }

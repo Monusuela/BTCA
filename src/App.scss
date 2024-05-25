@@ -455,8 +455,11 @@
 .Block-area {
     background-image: url(./images/Rectangle.svg);
     border-radius: 28px;
-    width: 1100px;
+    // width: 1100px;
+    width: min-content;
     // height: 402px;
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
     z-index: 1;
     // align-content: center;
@@ -467,6 +470,7 @@
     // margin-left: 50px;
 
     padding-top: 50px;
+    padding-right: 50px;
 
     // .Block-main{
 
@@ -497,7 +501,7 @@
         display: flex;
 
         &-input {
-            width: 700px;
+            width: 600px;
             height: 65px;
             border-radius: 8px;
             background-color: rgba(51, 49, 49, 0.721) !important;
@@ -512,14 +516,15 @@
             z-index: 1;
             display: flex;
             justify-content: center;
-            margin-left: -152px;
+            // margin-left: -152px;
             width: 150px;
             height: 50px;
             border-radius: 90px;
             background-color: #1D9A6D !important;
             color: white;
             align-items: center;
-            margin-top: 41px;
+            // margin-top: 41px;
+            margin-bottom: 50px;
             border: 1px solid #1D9A6D;
         }
     }

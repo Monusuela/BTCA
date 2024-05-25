@@ -1,22 +1,32 @@
 import { Button, Col, Flex, Input } from "antd";
 import Title from "antd/es/skeleton/Title";
-import { Fragment, useState } from "react"
+import axios from "axios";
+import { Fragment, useEffect, useState } from "react"
 import { Link } from "react-router-dom";
-
-
-//  import React, { useEffect, Fragment, useState } from "react";
-// import { useMutation, useSubscription, gql } from "@apollo/client";
-
-// import OnlineUser from "./OnlineUser";
 
 const Subscribe = () => {
 
-const [userEmail, setUserEmail] = useState("")
+  const [userEmail, setUserEmail] = useState("")
+  const [data, setData] = useState([])
 
-const addSubscribe = () => {
-  localStorage.setItem("userEmail", userEmail);
-  window.location.reload()
-}
+  useEffect(() => {
+    axios.get("http://localhost:3000/email")
+      .then((res) => {
+
+        setData(res.data)
+      }).catch((err) => {
+        alert(err)
+      })
+  }, [])
+
+  console.log(data);
+
+
+  const addSubscribe = () => {
+    localStorage.setItem("userEmail", userEmail);
+    window.location.reload()
+  }
+
 
 
   return (
@@ -32,24 +42,33 @@ const addSubscribe = () => {
             разработках BTCA.
           </p>
           <Flex className="Block-area-2">
-            <Input className="Block-area-2-input"
-            id="userEmail"
-            type="Email"
+            {data?.map((email) => {
+              return(
+                <div>
+                  <Input className="Block-area-2-input"
+                  
+              type="Email"
               placeholder={"Ваш e-mail"}
               value={userEmail}
               onChange={(e) => setUserEmail(e.target.value)}
-            ></Input>
+            >{email?.taste}</Input>
             <div className="">
               <Button
+              key={email.id}
+              id={email.id}
+              email={email.email}
                 className="Block-area-2-button"
                 onClick={addSubscribe}
               >
                 <Link to="/questions">Подписаться</Link>
               </Button>
             </div>
+                </div>
+              )
+            })}
           </Flex>
         </Col>
-      </Flex> ) : (
+      </Flex>) : (
         <div></div>
       )}
     </Fragment>

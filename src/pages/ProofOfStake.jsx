@@ -114,6 +114,9 @@ const ProofOfStake = () => {
 
       </section>
       <section className="section__main-6">
+        <Container>
+          <Flex></Flex>
+        </Container>
       </section>
       <section className="section__main-7">
         <Container>

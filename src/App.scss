@@ -847,6 +847,13 @@
                 padding-top: 20px;
             }
 
+            &-title2{
+                color: #fff;
+                font-size: 32px;
+                // width: 320px;
+                padding-top: 20px;
+            }
+
             &-text {
                 font-size: 16px;
                 color: gray;
@@ -1032,6 +1039,7 @@
 }
 
 .Slider_container {
+    margin-top: 30px;
     width: 1750px;
     padding: 60px, 300px;
     display: flex;

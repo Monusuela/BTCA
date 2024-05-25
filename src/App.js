@@ -13,6 +13,16 @@ import ProofOfStake from "./pages/ProofOfStake";
 import Questions from "./pages/Questions";
 import NotFound from "./pages/NotFound";
 import QuestionsForm from "./modules/QuestionsForm";
+import ColdStaking from "./pages/ColdStakind";
+import Shield from "./pages/Shield";
+import Downloads from "./pages/Downloads";
+import Masternoads from "./pages/Masternoads";
+import Merchant from "./pages/Merchant";
+import Statistics from "./pages/Statistics";
+import Documents from "./pages/Documents";
+import Community from "./pages/Community";
+import News from "./pages/News";
+import Why from "./pages/Why";
 
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
@@ -37,7 +47,7 @@ const App = () => {
                 <Link className="header-main__menu-link" to={"/"} >Кошельки</Link>
                 <Link className="header-main__menu-link" to={"/"} >Участие</Link>
                 <Link className="header-main__menu-link" to={"/"} >Ресурсы</Link>
-                <Link className="header-main__menu-link" to={"/"} >Новости</Link>
+                <Link className="header-main__menu-link" to="/news" >Новости</Link>
                 <Link className="header-main__menu-link" to={"/"} >О BTCA</Link>
 
               </nav>
@@ -63,6 +73,32 @@ const App = () => {
           <Route path="/questions" element={<Questions/>} />
 
           <Route path={"*"} element={<NotFound/>} />
+
+          <Route path="/coldStaking" element={<ColdStaking/>} />
+
+          <Route path="/shield" element={<Shield/>} />
+
+          <Route path="/downloads" element={<Downloads/>} />
+
+          <Route path="/masternoads" element={<Masternoads/>} />
+
+          <Route path="/merchant" element={<Merchant/>} />
+
+          <Route path="/statistics" element={<Statistics/>} />
+
+          <Route path="/documents" element={<Documents/>} />
+
+          <Route path="/community" element={<Community/>} />
+
+          <Route path="/news" element={<News/>} />
+
+          <Route path="/why" element={<Why/>} />
+
+          <Route path="/questions" element={<Questions/>} />
+
+          {/* <Route path="/" element={} /> */}
+
+          {/* <Route path="/" element={} /> */}
 
           {/* <Route path="/" element={} /> */}
 

@@ -1,42 +1,32 @@
 import { Fragment } from "react"
 import Container from "../components/container"
-import { Button, Col, Flex, Input, Row } from "antd"
-import Title from "antd/es/skeleton/Title"
-import { Link } from "react-router-dom"
-import chips from "../images/chips.png"
-import Icon1 from "../images/ikon/Frame 118.png"
-import Icon2 from "../images/ikon/Frame 117.png"
-import Icon3 from "../images/ikon/Frame 116.png"
-import Icon4 from "../images/ikon/Frame 115.png"
-import Frame from "../images/Frame.png"
+import { Col, Flex, Row } from "antd"
 import ControlledAccordions from "../components/Category"
 import { BsArrowRightSquareFill } from "react-icons/bs"
 import Subscribe from "../modules/subscribe"
-import staked from "../modules/staked"
-import Ice from "../images/ice.png"
-import AdobeStock from "../images/AdobeStock.png"
+import { Link } from "react-router-dom"
+import Frame from "../images/Frame.png"
 
-const ProofOfStake = () => {
+const Merchant = () => {
   return (
     <Fragment>
-
       <section className="section__main-5">
         <Container className={"container__left"}>
           <Flex className="banner-2" style={{ color: "#fff" }}>
             <Col span={11} className="banner-2">
               <h1 className="banner-2-title">
-                Proof of Stake
+              Мерчант
               </h1>
               <p className="banner-2-text">
-                Получайте вознаграждения за безопасность сети BTCA,
-                просто храня монеты в своем кошельке.
+              Идите в ногу с новейшими технологиями и начните получать 
+              новые источники дохода от глобального сообщества пользователей BTCA
               </p>
             </Col>
 
             <div className="Home_header_img2">
 
               <img
-                src={chips}
+                // src={chips}
                 alt="error"
               />
             </div>
@@ -51,7 +41,7 @@ const ProofOfStake = () => {
           <Flex className="case">
 
 
-            <Flex className="case-block" >
+            {/* <Flex className="case-block" >
               <Row className="case_row">
                 <Col className="case_row-col1">
                   <h1 className="case_row-col1-title" >Получить больше Владея малым</h1>
@@ -101,7 +91,7 @@ const ProofOfStake = () => {
                 </Flex>
               </Row>
 
-            </Flex>
+            </Flex> */}
 
           </Flex>
 
@@ -116,65 +106,6 @@ const ProofOfStake = () => {
 
 
       </section>
-      <section className="section__main-6">
-        <Container>
-          <Flex>
-            <div>
-              <div>
-                {staked()}
-              </div>
-            </div>
-
-            </Flex>
-          <Flex className="Regiration">
-            <Row className="Steps__Registration">
-              <Col className="Registration__getting">
-                <div className="Registration__getting-1">
-                  <p>Надежный и Простой</p>
-                </div>
-                <h1>
-                  Холодный Стекинг
-                </h1>
-                <p>
-                Делегируйте ваши BTCA для стекинга на горячий кошелек, 
-                сохраняя при этом полный контроль и безопасность ваших BTCA в оффлайн-режиме.
-                </p>
-                <div className="Registration__getting-image">
-                  <img
-                    src={Ice}
-                    alt="error"
-                    />
-                </div>
-
-                <Button className="Registration__getting-button">
-                  <Link to="/poorOfStake">Холодный Стекинг</Link>
-                </Button>
-              </Col>
-              <Col className="Registration__getting">
-                <div className="Registration__getting-1">
-                  <p >Специализированные</p>
-                </div>
-                <h1>
-                  Мастерноды
-                </h1>
-                <p>Мастерноды BTCA предоставляют дополнительные узлы 
-                  для проверки блоков и транзакций, повышая безопасность распределенной сети.</p>
-                <div className="Registration__getting-image">
-                  <img
-                    src={AdobeStock}
-                    alt="error"
-                  />
-                </div>
-
-                <Button className="Registration__getting-button2">
-                  <Link to="/masternoads">Мастерноды</Link>
-                </Button>
-              </Col>
-              
-            </Row>
-          </Flex>
-        </Container>
-      </section>
       <section className="section__main-7">
         <Container>
           <Flex className="Steps">
@@ -188,31 +119,23 @@ const ProofOfStake = () => {
           </Flex>
           <Flex className="Steps2">
             <Row className="Steps2__Registrations" >
+
               <Col className="Registrations__getting">
 
                 <h1 className="Registrations__getting-title">
-                  BTCA Proof of Stake
+                  Android
                 </h1>
-                <p className="Registrations__getting-text">Введение в BTCA Proof of Stake</p>
-                <Link className="Registrations__getting-link">Перейти <BsArrowRightSquareFill  className="Registrations__getting-link-icon"/></Link>
+                <p className="Registrations__getting-text">Как принимать PIVX с помощью Android</p>
+                <Link className="Registrations__getting-link">Перейти <BsArrowRightSquareFill className="Registrations__getting-link-icon" /></Link>
 
               </Col>
               <Col className="Registrations__getting">
 
-                <h1 className="Registrations__getting-title">
-                  Требования к стекингу
+                <h1 className="Registrations__getting-title2">
+                  QT-кошелек
                 </h1>
-                <p className="Registrations__getting-text">Что вам необходимо для стекинга</p>
-                <Link className="Registrations__getting-link">Перейти <BsArrowRightSquareFill className="Registrations__getting-link-icon"/></Link>
-
-              </Col>
-              <Col className="Registrations__getting">
-
-                <h1 className="Registrations__getting-title">
-                  Требования стекинга
-                </h1>
-                <p className="Registrations__getting-text">Как запустить стекинг</p>
-                <Link className="Registrations__getting-link">Перейти <BsArrowRightSquareFill className="Registrations__getting-link-icon"/></Link>
+                <p className="Registrations__getting-text">Видеоруководства по QT-кошельку</p>
+                <Link className="Registrations__getting-link">Перейти <BsArrowRightSquareFill className="Registrations__getting-link-icon" /></Link>
 
               </Col>
             </Row>
@@ -233,4 +156,4 @@ const ProofOfStake = () => {
   )
 }
 
-export default ProofOfStake;
+export default Merchant

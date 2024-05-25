@@ -42,22 +42,22 @@ const Footer = () => {
                                 <Link to={"#"} className="Footer__winget-link">Получить PIVX</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Конфиденциальность Shield</Link>
+                                <Link to="/shield" className="Footer__winget-link">Конфиденциальность Shield</Link>
                             </li>
                             <li>
                                 <Link to="/poorOfStake" className="Footer__winget-link">Продвинутый PoS</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Холодный Стекинг</Link>
+                                <Link to="/coldStaking" className="Footer__winget-link">Холодный Стекинг</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Мастерноды</Link>
+                                <Link to="/masternoads" className="Footer__winget-link">Мастерноды</Link>
                             </li>
                             <li>
                                 <Link to={"#"} className="Footer__winget-link">Управление</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Экономика</Link>
+                                <Link to="/documents" className="Footer__winget-link">Экономика</Link>
                             </li>
                         </ul>
                         </Col>
@@ -74,19 +74,19 @@ const Footer = () => {
                                 <Link to={"#"} className="Footer__winget-link">Coin Specs</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Обозреватель блоков</Link>
+                                <Link to="/downloads" className="Footer__winget-link">Обозреватель блоков</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Statistics</Link>
+                                <Link to="/statistics" className="Footer__winget-link">Statistics</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Инфопанель</Link>
+                                <Link to="/merchant" className="Footer__winget-link">Инфопанель</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Новости</Link>
+                                <Link to="/news" className="Footer__winget-link">Новости</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Дорожная Карта</Link>
+                                <Link to="/community" className="Footer__winget-link">Дорожная Карта</Link>
                             </li>
                         </ul>
                         </Col>
@@ -102,10 +102,10 @@ const Footer = () => {
                                 <Link to={"#"} className="Footer__winget-link">Форум</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Почему BTCA</Link>
+                                <Link to="/why" className="Footer__winget-link">Почему BTCA</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Контакты</Link>
+                                <Link to="/questions" className="Footer__winget-link">Контакты</Link>
                             </li>
                         </ul>
                         </Col>

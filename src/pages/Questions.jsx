@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 import question from "../images/question.png"
 import Frame from "../images/Frame.png"
 import handquestion from "../images/handquestion.png"
-import QuestionsForm from "../modules/SubscribeForm"
+import QuestionsForm from "../modules/QuestionsForm"
 
 
 

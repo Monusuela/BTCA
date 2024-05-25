@@ -11,7 +11,7 @@ import Icon4 from "../images/ikon/Frame 115.png"
 import Frame from "../images/Frame.png"
 import ControlledAccordions from "../components/Category"
 import { BsArrowRightSquareFill } from "react-icons/bs"
-import Subscribe from "../components/subscribe"
+import Subscribe from "../modules/subscribe"
 
 const ProofOfStake = () => {
   return (

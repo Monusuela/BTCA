@@ -6,7 +6,7 @@ module.exports = {
     entry: {
         main: './Home.jsx',
         ProofOfStake: './ProofOfStake.jsx',
-        admin: './Subcribe.jsx'
+        admin: './Questions.jsx',
     },
     output: {
         filename: './jsx/[name].jsx',

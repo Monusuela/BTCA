@@ -25,6 +25,7 @@ import Steps2 from "../images/Steps/Steps2.png";
 import Steps3 from "../images/Steps/Steps3.png";
 import { Link } from "react-router-dom";
 import CenterMode from "./slider";
+import Subscribe from "../modules/subscribe";
 
 
 
@@ -241,30 +242,9 @@ const Home = () => {
               </Col>
             </Row>
           </Flex>
-          <Flex className="Block-area">
-            <Col className="Block-main">
-              <Title className="Block-area-title">
-                Никогда не пропускайте обновления
-              </Title>
-              <p className="Block-area-text">
-                Подпишитесь на информационный бюллетень и будьте первым, кто
-                получит новейшие оповещения, объявления и обновления о
-                разработках BTCA.
-              </p>
-              <Flex className="Block-area-2">
-                <Input  className="Block-area-2-input"
-                  placeholder={"Ваш e-mail"}
-                  ></Input>
-                <div className="">
-                <Button
-                  className="Block-area-2-button"
-                 >
-                  <Link to="/subscribe">Подписаться</Link>
-                </Button>
-                </div>
-              </Flex>
-            </Col>
-          </Flex>
+          <div>
+            {Subscribe()}
+          </div>
         </Container>
       </section>
     </Fragment>

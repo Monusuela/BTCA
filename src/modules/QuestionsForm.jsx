@@ -4,18 +4,6 @@ import { Fragment, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { useForm } from "antd/es/form/Form";
 
-// export const TelegramGetChatId = async () => {
-//   const response = await axios.get(API +"/getUpdates");
-
-//   return response.data.result[0].message.chat.id;
-// };
-
-// export const TelegramPostChat = async (data = "empty") => {
-//   await axios.post(API + "/sendmessage", {
-//     chat_id: TelegramGetChatId(),
-//     text: data,
-//   });
-// };
 
 const QuestionsForm = () => {
     const [email, setEmail] = useState("")

@@ -10,8 +10,9 @@ import { Content } from "antd/es/layout/layout";
 import Footer from "./layout/footer";
 import Home from "./pages/Home";
 import ProofOfStake from "./pages/ProofOfStake";
-import Subscribe from "./pages/Subscribe";
+import Questions from "./pages/Questions";
 import NotFound from "./pages/NotFound";
+import QuestionsForm from "./modules/QuestionsForm";
 
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
@@ -59,7 +60,7 @@ const App = () => {
 
           <Route path="/poorOfStake" element={<ProofOfStake/>} />
 
-          <Route path="/subscribe" element={<Subscribe/>} />
+          <Route path="/questions" element={<Questions/>} />
 
           <Route path={"*"} element={<NotFound/>} />
 

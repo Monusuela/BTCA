@@ -17,7 +17,7 @@ import { useForm } from "antd/es/form/Form";
 //   });
 // };
 
-const SubscribeForm = () => {
+const QuestionsForm = () => {
     const [email, setEmail] = useState("")
     const [questions, setQuestions] = useState("")
 
@@ -83,4 +83,4 @@ const SubscribeForm = () => {
     )
 }
 
-export default SubscribeForm
+export default QuestionsForm

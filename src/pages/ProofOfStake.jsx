@@ -11,6 +11,7 @@ import Icon4 from "../images/ikon/Frame 115.png"
 import Frame from "../images/Frame.png"
 import ControlledAccordions from "../components/Category"
 import { BsArrowRightSquareFill } from "react-icons/bs"
+import Subscribe from "../components/subscribe"
 
 const ProofOfStake = () => {
   return (
@@ -113,7 +114,6 @@ const ProofOfStake = () => {
 
       </section>
       <section className="section__main-6">
-
       </section>
       <section className="section__main-7">
         <Container>
@@ -158,36 +158,15 @@ const ProofOfStake = () => {
             </Row>
           </Flex>
 
-          <div className="">
-            <div className="">
+          <div>
+            <div>
               {ControlledAccordions()}
             </div>
           </div>
 
-          <Flex className="Block-area">
-            <Col className="Block-main">
-              <Title className="Block-area-title">
-                Никогда не пропускайте обновления
-              </Title>
-              <p className="Block-area-text">
-                Подпишитесь на информационный бюллетень и будьте первым, кто
-                получит новейшие оповещения, объявления и обновления о
-                разработках BTCA.
-              </p>
-              <Flex className="Block-area-2">
-                <Input className="Block-area-2-input"
-                  placeholder={"Ваш e-mail"}
-                ></Input>
-                <div className="">
-                  <Button
-                    className="Block-area-2-button"
-                  >
-                    <Link to="/subscribe">Подписаться</Link>
-                  </Button>
-                </div>
-              </Flex>
-            </Col>
-          </Flex>
+          <div>
+            {Subscribe()}
+          </div>
         </Container>
       </section>
     </Fragment>

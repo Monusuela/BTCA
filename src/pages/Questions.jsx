@@ -7,12 +7,12 @@ import { Link } from "react-router-dom"
 import question from "../images/question.png"
 import Frame from "../images/Frame.png"
 import handquestion from "../images/handquestion.png"
-import SubscribeForm from "../modules/SubscribeForm"
+import QuestionsForm from "../modules/SubscribeForm"
 
 
 
 
-const Subscribe = () => {
+const Questions = () => {
 
 
 
@@ -59,7 +59,7 @@ const Subscribe = () => {
                                 <h1 className="casket-title">Не нашли нужного ответа?</h1>
                                 <p className="casket-text">Задайте вопрос нам напрямую и мы ответим вам в течении 24 часов</p>
 
-                                {SubscribeForm()}
+                                {QuestionsForm()}
                             </Col>
 
                             <div className="casket-img">
@@ -79,4 +79,4 @@ const Subscribe = () => {
         </Fragment>
     )
 }
-export default Subscribe;
+export default Questions;

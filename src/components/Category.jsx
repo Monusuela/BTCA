@@ -17,49 +17,30 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div style={{ width: "1750px", padding: "60px 300px", display: "flex" }}>
+    <div className="Slider_container">
       <Container className={"container__left"}>
-        <Col style={{ width: "500px"}}>
-        <Title style={{
-          fontSize: "42px",
-          color: "white"
-          // background: "-webkit-linear-gradient(top left, #fff, rgba(60, 61, 61, 0.606))",
-          // webkitBa: "text",
-          // -webkit-text-fill-color: "transparent",
-        }}>Часто задаваемые Вопросы</Title>
-        <p style={{color: "grey", paddingTop: "30px", paddingBottom: "15px"}}>Категории</p>
-        <ul className={`list-none Footer__winget-list`} style={{fontSize: "16px", color: "white", width: "365px" }}>
-          <li style={{background: "#151822",  height: "60px", borderRadius: "8px",
-            paddingLeft: "20px", paddingTop: "20px"
-          }}>Финансы</li>
-          <li style={{height: "60px", borderRadius: "8px",
-            paddingLeft: "20px", paddingTop: "20px"
-          }}>Начало</li>
-          <li style={{height: "60px", borderRadius: "8px",
-            paddingLeft: "20px", paddingTop: "20px"
-          }}>Лицензии</li>
-          <li style={{height: "60px", borderRadius: "8px",
-            paddingLeft: "20px", paddingTop: "20px"
-          }}>Лицензии</li>
+        <Col className="slider__col" >
+        <Title className="slider__col-title">Часто задаваемые Вопросы</Title>
+        <p className="slider-col__text" >Категории</p>
+        <ul className={`list-none slider__col-list`}>
+          <li className="slider__col-list-li1">Финансы</li>
+          <li className="slider__col-list-li2">Начало</li>
+          <li className="slider__col-list-li2">Лицензии</li>
+          <li className="slider__col-list-li2">Лицензии</li>
         </ul>
       </Col>
       </Container>
       <div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
-        style={{ background: "#0D111B", color: "white"}}>
-        {/* <div className=""> */}
+        id="panel" >
           <AccordionSummary
-            // expandIcon={<MdFiberManualRecord style={{ color: "white"}} />}
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ flexShrink: 0 }} style={{color: "#279D88"}}>
+            <Typography id="panel-typography">
             Что такое Proof of Stake?
             </Typography>
-            {/* <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography> */}
-          </AccordionSummary>
-        {/* </div> */}
-        {/* <div className="">  */}
+           </AccordionSummary>
           <AccordionDetails>
             <Typography>
             Аббревиатура POS расшифровывается как point of sale, 
@@ -69,20 +50,15 @@ export default function ControlledAccordions() {
             гипермаркете, салоне продаж.
             </Typography>
           </AccordionDetails>
-        {/* </div> */}
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}
-        style={{ background: "#0D111B", color: "white"}}>
+        id="panel">
         <AccordionSummary
-          // expandIcon={<MdFiberManualRecord style={{ color: "white" }} />}
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{flexShrink: 0 }} style={{color: "#279D88"}}>
+          <Typography id="panel-typography">
             В чем преимущества PoS перед PoW?</Typography>
-          {/* <Typography sx={{ color: 'text.secondary' }}>
-            You are currently not an owner
-          </Typography> */}
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -93,18 +69,14 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}
-        style={{ background: "#0D111B", color: "white"}}>
+        id="panel">
         <AccordionSummary
-          // expandIcon={<MdFiberManualRecord style={{ color: "white" }} />}
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{flexShrink: 0 }} style={{color: "#279D88"}}>
+          <Typography id="panel-typography">
           Что такое стекинг?
           </Typography>
-          {/* <Typography sx={{ color: 'text.secondary' }}>
-            Filtering has been entirely disabled for whole web server
-          </Typography> */}
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -116,13 +88,12 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}
-        style={{ background: "#0D111B", color: "white"}}>
+        id="panel">
         <AccordionSummary
-          // expandIcon={<MdFiberManualRecord style={{ color: "white" }} />}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{flexShrink: 0 }} style={{color: "#279D88"}}
+          <Typography id="panel-typography"
           >Как работает стекинг?</Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -137,13 +108,12 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}
-        style={{ background: "#0D111B", color: "white"}}>
+        id="panel">
         <AccordionSummary
-          // expandIcon={<MdFiberManualRecord style={{ color: "white" }} />}
           aria-controls="panel5bh-content"
           id="panel5bh-header"
         >
-          <Typography sx={{ flexShrink: 0 }} style={{color: "#279D88"}}>
+          <Typography id="panel-typography">
           Как с помощью Proof of Stake я могу 
           получить PIV в качестве вознаграждения?
           </Typography>

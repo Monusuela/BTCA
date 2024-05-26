@@ -3,12 +3,13 @@ import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex } from "antd"
 import Frame from "../images/Frame.png"
+import btca from "../images/btca.png"
 
 const Documents = () => {
     return (
         <Fragment>
             <section className="section__main-5">
-                <Container className={"container__left"}>
+                <Container className={"container__left4"}>
                     <Flex className="banner-2" style={{ color: "#fff" }}>
                         <Col span={11} className="banner-2">
                             <h1 className="banner-2-title">
@@ -23,7 +24,7 @@ const Documents = () => {
                         <div className="Home_header_img2">
 
                             <img
-                                // src={chips}
+                                src={btca}
                                 alt="error"
                             />
                         </div>

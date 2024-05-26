@@ -3,6 +3,8 @@ import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex } from "antd"
 import Frame from "../images/Frame.png"
+import dowload from "../images/dowload.png"
+import abstract from "../images/3Dabstract.png"
 
 const Downloads = () => {
     return( 
@@ -20,11 +22,11 @@ const Downloads = () => {
                         </Col>
 
                         <div className="Home_header_img">
-                            <img
-                                //   src={planet} 
+                            <img className="Home_header_img-abs"
+                                  src={abstract} 
                                 alt="error" />
                             <img className="Home_header_img-bitcoin"
-                                // src={bitcoin}
+                                src={dowload}
                                 alt="error"
                             />
                         </div>

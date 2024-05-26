@@ -6,6 +6,8 @@ import { BsArrowRightSquareFill } from "react-icons/bs"
 import Subscribe from "../modules/subscribe"
 import { Link } from "react-router-dom"
 import Frame from "../images/Frame.png"
+import elips from "../images/Ellipse 30.png"
+import frame2 from "../images/Frame 120.png"
 
 const Masternoads = () => {
     return(
@@ -24,10 +26,10 @@ const Masternoads = () => {
 
                         <div className="Home_header_img">
                             <img
-                                //   src={planet} 
+                                  src={frame2} 
                                 alt="error" />
                             <img className="Home_header_img-bitcoin"
-                                // src={bitcoin}
+                                src={elips}
                                 alt="error"
                             />
                         </div>

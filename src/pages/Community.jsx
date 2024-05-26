@@ -3,6 +3,8 @@ import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex } from "antd"
 import Frame from "../images/Frame.png"
+import catting from "../images/Chatting.png"
+import abstract from "../images/3Dabstract.png"
 
 const Community = () => {
     return( 
@@ -20,10 +22,12 @@ const Community = () => {
                             </p>
                         </Col>
 
-                        <div className="Home_header_img2">
-
-                            <img
-                                // src={chips}
+                        <div className="Home_header_img">
+                            <img className="Home_header_img-abs"
+                                  src={abstract} 
+                                alt="error" />
+                            <img className="Home_header_img-bitcoin"
+                                src={catting}
                                 alt="error"
                             />
                         </div>

@@ -6,6 +6,7 @@ import { BsArrowRightSquareFill } from "react-icons/bs"
 import Subscribe from "../modules/subscribe"
 import { Link } from "react-router-dom"
 import Frame from "../images/Frame.png"
+import merchant from "../images/merchant.png"
 
 const Merchant = () => {
   return (
@@ -26,7 +27,7 @@ const Merchant = () => {
             <div className="Home_header_img2">
 
               <img
-                // src={chips}
+                src={merchant}
                 alt="error"
               />
             </div>

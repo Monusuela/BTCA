@@ -4,6 +4,7 @@ import Subscribe from "../modules/subscribe"
 import ControlledAccordions from "../components/Category"
 import { Col, Flex } from "antd"
 import Frame from "../images/Frame.png"
+import shield1 from "../images/shield1.png"
 
 const Shield = () => {
     return (
@@ -21,11 +22,8 @@ const Shield = () => {
                         </Col>
 
                         <div className="Home_header_img">
-                            <img
-                                //   src={planet} 
-                                alt="error" />
-                            <img className="Home_header_img-bitcoin"
-                                // src={bitcoin}
+                            <img className="Home_header_img-bitcoin2"
+                                src={shield1}
                                 alt="error"
                             />
                         </div>

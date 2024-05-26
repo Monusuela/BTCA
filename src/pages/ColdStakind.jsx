@@ -7,6 +7,7 @@ import Subscribe from "../modules/subscribe"
 import { Link } from "react-router-dom"
 import staked from "../modules/staked"
 import Frame from "../images/Frame.png"
+import coin from "../images/coin.png"
 
 const ColdStaking = () => {
   return (
@@ -23,10 +24,10 @@ const ColdStaking = () => {
               </p>
             </Col>
 
-            <div className="Home_header_img2">
+            <div className="Home_header_img">
 
               <img
-                // src={chips}
+                src={coin}
                 alt="error"
               />
             </div>

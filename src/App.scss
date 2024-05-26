@@ -157,6 +157,15 @@
     width: 100% !important;
 }
 
+.container__left3{
+    padding-left: calc((100% - 1715px) / 2);
+    width: 100% !important;
+}
+.container__left4{
+    padding-left: calc((100% - 1715px) / 2);
+    width: 80% !important;
+}
+
 .Home_header_img {
     flex-grow: 1;
     text-align: right;
@@ -166,6 +175,18 @@
         align-items: center;
         position: absolute;
         top: 300px;
+    }
+
+    &-bitcoin2{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 200px;
+    }
+
+    &-abs{
+        padding-top: 150px;
+        width: 900px;
     }
 
 }
@@ -624,7 +645,12 @@
             display: flex;
             align-items: center;
 
+            &-birj{
+                width: 970px;
+            }
         }
+
+       
     }
 
     .case-title {

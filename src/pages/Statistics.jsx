@@ -3,12 +3,13 @@ import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex } from "antd"
 import Frame from "../images/Frame.png"
+import birj from "../images/birj.png"
 
 const Statistics = () => {
     return( 
         <Fragment>
             <section className="section__main-5">
-                <Container className={"container__left"}>
+                <Container className={"container__left3"}>
                     <Flex className="banner-2" style={{ color: "#fff" }}>
                         <Col span={11} className="banner-2">
                             <h1 className="banner-2-title">
@@ -21,8 +22,8 @@ const Statistics = () => {
 
                         <div className="Home_header_img2">
 
-                            <img
-                                // src={chips}
+                            <img className="Home_header_img2-birj"
+                                src={birj}
                                 alt="error"
                             />
                         </div>

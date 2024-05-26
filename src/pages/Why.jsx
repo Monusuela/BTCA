@@ -3,6 +3,8 @@ import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex } from "antd"
 import Frame from "../images/Frame.png"
+import frame2 from "../images/Frame 120.png"
+import why from "../images/why.png"
 
 const Why = () => {
     return( 
@@ -19,10 +21,12 @@ const Why = () => {
                             </p>
                         </Col>
 
-                        <div className="Home_header_img2">
-
+                        <div className="Home_header_img">
                             <img
-                                // src={chips}
+                                  src={frame2} 
+                                alt="error" />
+                            <img className="Home_header_img-bitcoin"
+                                src={why}
                                 alt="error"
                             />
                         </div>

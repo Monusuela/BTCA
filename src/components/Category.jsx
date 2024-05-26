@@ -30,7 +30,7 @@ export default function ControlledAccordions() {
         </ul>
       </Col>
       </Container>
-      <div>
+      <div className='acordion'>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
         id="panel" >
           <AccordionSummary

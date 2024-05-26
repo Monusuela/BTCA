@@ -1248,6 +1248,17 @@
     }
     &-7{
         width: 713px;
+
+    }
+
+    .slider-container{
+        width: 713px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .acordion{
+            width: 400px;
+        }
     }
     &-8{
         width: 713px;

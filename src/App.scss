@@ -221,7 +221,7 @@
     z-index: 1;
     color: #fff;
     margin-top: -155px;
-    padding-left: 170px;
+    padding-left: 50px;
 
     &-title {
         font-family: var(--second-family);
@@ -357,10 +357,6 @@
             font-size: 18px;
             line-height: 178%;
             color: white;
-        }
-
-        &-image {
-            margin-left: 180px;
         }
 
         &_icons {
@@ -522,7 +518,7 @@
         display: flex;
 
         &-input {
-            width: 600px;
+            width: 800px;
             height: 65px;
             border-radius: 8px;
             background-color: rgba(51, 49, 49, 0.721) !important;
@@ -1180,4 +1176,136 @@
         color: white;
         margin-top: 20px;
     }
+}
+
+
+// MEDIA
+
+@media(max-width: 480px) {
+
+    .header{
+        width: 713px;
+        background: linear-gradient(90deg, rgba(0, 16, 36, 1) 0%, rgba(29, 22, 110, 1) 0%, rgba(25, 58, 74, 1) 36%, rgb(7, 41, 10) 100%, rgba(0, 146, 255, 1) 100%);
+    
+        &-main{
+            display: flex;
+            flex-wrap: wrap;
+
+            &__menu{
+               gap: 30px;
+               padding-bottom: 15px;
+            }
+        }
+    }
+
+
+    
+
+ .section__main{
+    width: max-content;
+    
+    &-1{
+        width: 713px;
+        background-image: url(./images/Rectangle.svg);
+        background-color: #0D111B;
+
+        .banner{
+
+            &-title{
+                padding-left: 50px;
+                width: 620px;
+            }
+
+            &-text{
+                padding-left: 50px;
+                width: 620px;
+            }
+        }
+    }
+
+    &-2{
+        width: 713px;
+    }
+
+    &-3{
+        width: 713px;
+    }
+
+    &-4{
+        width: 713px;
+
+        .Regiration{
+            display: flex;
+            padding-left: 150px;
+        }
+    }
+
+    &-5{
+        width: 713px;
+    }
+    &-6{
+        width: 713px;
+    }
+    &-7{
+        width: 713px;
+    }
+    &-8{
+        width: 713px;
+    }
+    &-9{
+        width: 713px;
+    }
+ }
+
+ .Home_header_img{
+    display: none;
+ }
+ 
+ .slider-container{
+    margin-top: 400px;
+ }
+
+ .Partners{
+    display: flex;
+    flex-wrap: wrap;
+
+    &_info{
+        padding-left: 50px;
+
+        // &-title{
+        //     padding-left: 20px;
+        // }
+    }
+
+    &-icon{
+        margin-left: 0;
+        padding-left: 118px;
+        padding-top: 262px;
+    }
+ }
+
+ .Wallet{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+
+    
+ }
+
+ .Block-area{
+
+    &-2{
+
+        &-input{
+            width: 400px;
+        }
+
+        
+    }
+    &-text{
+        width: 422px;
+    }
+ }
+
+ 
 }

@@ -52,7 +52,7 @@
 
 
     .banner {
-        top: 200px;
+        top: 100px;
 
         &-title {
             width: 595px;
@@ -638,8 +638,8 @@
         .Home_header_img2 {
             flex-grow: 1;
             text-align: right;
-            display: flex;
-            align-items: center;
+            // display: flex;
+            // align-items: center;
 
             &-birj{
                 width: 970px;
@@ -677,8 +677,8 @@
 
 
                 .case_row {
-                    display: flex;
-                    flex-wrap: wrap;
+                    // display: flex;
+                    // flex-wrap: wrap;
                     color: #fff;
                     padding: 25px;
 
@@ -753,7 +753,7 @@
         }
 
         .frame-img {
-            display: flex;
+            // display: flex;
             justify-content: center;
             margin-top: -270px;
         }
@@ -1063,6 +1063,8 @@
 .Slider{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 50px;
 
     &_container {
         margin-top: 30px;
@@ -1234,6 +1236,10 @@
                 width: 620px;
             }
         }
+
+        .frame-img{
+            display: none;
+        }
     }
 
     &-2{
@@ -1255,6 +1261,33 @@
 
     &-5{
         width: 713px;
+
+        .case_row{  
+            display: table;
+
+            &-col1{
+                padding-bottom: 15px;
+            }
+
+            &-cols{
+                display: table;
+
+                &-col3{
+                    padding-bottom: 15px;
+    
+                }
+
+                &-col5{
+                    padding-top: 15px;
+                }
+            }
+
+            
+        }
+
+        .frame-img{
+            display: none;
+        }
     }
     &-6{
         width: 713px;
@@ -1264,15 +1297,8 @@
 
     }
 
-    .slider-container{
-        // width: 713px;
-        display: flex;
-        flex-wrap: wrap;
+    
 
-        .acordion{
-            width: 400px;
-        }
-    }
     &-8{
         width: 713px;
     }
@@ -1282,6 +1308,9 @@
  }
 
  .Home_header_img{
+    display: none;
+ }
+ .Home_header_img2{
     display: none;
  }
  

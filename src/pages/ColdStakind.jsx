@@ -42,9 +42,9 @@ const ColdStaking = () => {
           <Flex className="case">
 
 
-            {/* <Flex className="case-block" >
+             <Flex className="case-block" >
               <Row className="case_row">
-                <Col className="case_row-col1">
+              {/*  <Col className="case_row-col1">
                   <h1 className="case_row-col1-title" >Получить больше Владея малым</h1>
                   <p  className="case_row-col1-text" >Независимо от того, являетесь ли вы разработчиком,
                     мерчантом, конечным пользователем или покупателем окон,
@@ -89,10 +89,10 @@ const ColdStaking = () => {
                     <p className="cols-text">У каждого UTXO есть шанс выиграть ставку
                       с линейным снижением сложности в зависимости от ценности UTXO. </p>
                   </Col>
-                </Flex>
+                </Flex>*/}
               </Row>
 
-            </Flex> */}
+            </Flex> 
 
           </Flex>
 

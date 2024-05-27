@@ -72,7 +72,8 @@ const Questions = () => {
 
                     </Flex>
                     <Flex  className="banner_img-2">
-                        <img src={Frame} alt="error"/>
+                        <img src={Frame} alt="error"
+                        className="banner_img-fr"/>
                     </Flex>
                 </Container>
             </section>

@@ -346,7 +346,7 @@
     padding-top: 150px;
 
     .Wallet {
-        width: 900px;
+        // width: 900px;
 
         &-title {
             font-family: var(--second-family);
@@ -668,22 +668,23 @@
         padding-bottom: 20px;
     }
 
-    &-text2{
+    &-text2 {
         font-size: 12px;
         width: 350px;
-        color: gray;padding-bottom: 20px;
+        color: gray;
+        padding-bottom: 20px;
     }
 
-    &-button{
+    &-button {
         background-color: #2429699e !important;
         border: 1px solid #2429699e;
         color: white;
         padding-bottom: 15px;
     }
 
-    .total{
+    .total {
 
-        &-staked{
+        &-staked {
             background-color: #2121392f;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.461);
@@ -691,41 +692,62 @@
             padding-left: 30px;
             width: 350px;
             margin-top: 20px;
-            &-text{
+
+            &-text {
                 color: gray;
                 font-size: 18px;
                 padding-bottom: 5px;
             }
 
-            &-title{
+            &-title {
                 color: #fff;
                 font-size: 36px;
             }
 
-            .estimated{
-                &-text{
-                    display: flex;
-                    justify-content: flex-end;
-                    color: #fff;
-                    font-size: 18px;
+
+        }
+    }
+
+    .estimated {
+        &-text {
+            display: flex;
+            justify-content: flex-end;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 15px;
+        }
+
+        &-list {
+            margin-top: 15px;
+            width: 350px;
+            background-color: #2121392f;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.461);
+            
+
+            &-data {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                border-bottom: 1px solid gray;
+
+                &-text {
+                    color: rgb(169, 166, 166);
                 }
 
-                &-list{
-                    width: 350px;
-                    background-color: #2121392f;
-                    border-radius: 8px;
-                    border: 1px solid rgba(255, 255, 255, 0.461);
+                &-number {
+                    background: -webkit-linear-gradient(top left, #26f2a0, rgba(1, 26, 255, 0.606));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding-bottom: 15px;
+                    font-size: 20px;
 
-                    &-data{
-                        display: flex;
-                        justify-content: space-between;
-                    }
                 }
-
-
-
             }
         }
+
+
+
     }
 }
 
@@ -1025,6 +1047,7 @@
 
     &-info2 {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
 
         &-button1 {
@@ -1157,8 +1180,8 @@
 
 .casket {
     border-radius: 16px;
-    width: 1231px;
-    height: 654px;
+    width: min-content;
+    // height: 654px;
     background: rgb(13 13 13 / 15%);
     border: 1px solid rgb(145 140 140 / 15%);
     padding-top: 40px;
@@ -1180,6 +1203,7 @@
     &-img {
         display: flex;
         justify-content: end;
+        padding-left: 100px;
     }
 }
 
@@ -1433,6 +1457,18 @@
 
         &-8 {
             width: 713px;
+            
+            .banner2{
+                padding-left: 10px;
+
+                &-title-2{
+                    width: 600px;
+                }
+            }
+
+            .answers{
+                padding-left: 40px;
+            }
         }
 
         &-9 {
@@ -1504,9 +1540,30 @@
         }
     }
 
-    .banner-3{
+    .banner-2{
+        padding-left: 50px;
+
+    }
+
+    .banner-3 {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .casket{
+        display: flow-root;
+        margin-left: 20px;
+        // &-img{
+        //     display: flex;
+        // }
+    }
+
+    .banner_img-fr{
+        display: none;
+    }
+
+    .banner_img{
+        display: none;
     }
 
 }

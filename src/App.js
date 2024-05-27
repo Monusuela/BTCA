@@ -23,6 +23,7 @@ import Documents from "./pages/Documents";
 import Community from "./pages/Community";
 import News from "./pages/News";
 import Why from "./pages/Why";
+import Comment from "./pages/Support";
 
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
@@ -96,7 +97,7 @@ const App = () => {
 
           <Route path="/questions" element={<Questions/>} />
 
-          {/* <Route path="/" element={} /> */}
+          {/* <Route path="/comment" element={<Comment/>} /> */}
 
           {/* <Route path="/" element={} /> */}
 

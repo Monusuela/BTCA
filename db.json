@@ -1,14 +1,33 @@
 {
     "email": [
         {
-            "id": "",
+            "id": 1,
             "email": ""
         }
-        
     ],
-    "question":[ {
-        "id": "",
-        "email": "",
-        "text": ""
-    }]
+    "question": [
+        {
+            "id": 1,
+            "email": "",
+            "text": ""
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "Items": [
+                {
+                    "id": 1,
+                    "name": "Hello. I have a very old wallet version (PIVX Core version v3.1.0.2 (64-bit)). Wondering if you can guide me on the best way to update my wallet and get up-to-date on the blockchain? Many thanks. Robin",
+                    "Items": [
+                        {
+                            "id": 2,
+                            "name": "Robin, the best thing to do would be to do the following: 1.Shutdown old wallet 2.upgrade wallet version 3.start new wallet and follow this guide:",
+                            "Items": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

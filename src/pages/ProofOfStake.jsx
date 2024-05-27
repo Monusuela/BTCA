@@ -127,15 +127,15 @@ const ProofOfStake = () => {
 
             </Flex>
           <Flex className="Regiration">
-            <Row className="Steps__Registration">
-              <Col className="Registration__getting">
+            <Row className="Steps__Registration2">
+              <Col className="Registration__getting2">
                 <div className="Registration__getting-1">
-                  <p>Надежный и Простой</p>
+                  <p className="Registration__getting-1-text">Надежный и Простой</p>
                 </div>
-                <h1>
+                <h1 className="Registration__getting-title1">
                   Холодный Стекинг
                 </h1>
-                <p>
+                <p className="Registration__getting-1-text2">
                 Делегируйте ваши BTCA для стекинга на горячий кошелек, 
                 сохраняя при этом полный контроль и безопасность ваших BTCA в оффлайн-режиме.
                 </p>
@@ -146,18 +146,18 @@ const ProofOfStake = () => {
                     />
                 </div>
 
-                <Button className="Registration__getting-button">
+                <Button className="Registration__getting-button3">
                   <Link to="/poorOfStake">Холодный Стекинг</Link>
                 </Button>
               </Col>
-              <Col className="Registration__getting">
+              <Col className="Registration__getting2">
                 <div className="Registration__getting-1">
-                  <p >Специализированные</p>
+                  <p className="Registration__getting-1-text">Специализированные</p>
                 </div>
-                <h1>
+                <h1 className="Registration__getting-title1">
                   Мастерноды
                 </h1>
-                <p>Мастерноды BTCA предоставляют дополнительные узлы 
+                <p className="Registration__getting-1-text2">Мастерноды BTCA предоставляют дополнительные узлы 
                   для проверки блоков и транзакций, повышая безопасность распределенной сети.</p>
                 <div className="Registration__getting-image">
                   <img
@@ -166,7 +166,7 @@ const ProofOfStake = () => {
                   />
                 </div>
 
-                <Button className="Registration__getting-button2">
+                <Button className="Registration__getting-button3">
                   <Link to="/masternoads">Мастерноды</Link>
                 </Button>
               </Col>

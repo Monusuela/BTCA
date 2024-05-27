@@ -99,7 +99,7 @@ const Footer = () => {
                                 <Link to={"#"} className="Footer__winget-link">Руководства</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Форум</Link>
+                                <Link to="/comment" className="Footer__winget-link">Форум</Link>
                             </li>
                             <li>
                                 <Link to="/why" className="Footer__winget-link">Почему BTCA</Link>

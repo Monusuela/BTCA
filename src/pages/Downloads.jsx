@@ -43,9 +43,9 @@ const Downloads = () => {
         <Container className={"container-2"}>
 
           <Flex className="Regiration3">
-            <Row className="Steps__Registration2">
-              <Col className="Registration__getting3">
-                <div className="Registration__getting-img">
+            <Row className="Steps__Registration4">
+              <Col className="Registration__getting5">
+                <div className="Registration__getting-img3">
                   <img
                     src={window}
                     alt="error"
@@ -54,10 +54,10 @@ const Downloads = () => {
                 <h1 className="Registration__getting-title2">
                   STABLE RELEASE
                 </h1>
-                <div>
-                  <p>64bit:</p>
-                  <Link>Installer</Link>
-                  <Link>ZIP</Link>
+                <div className="list-content">
+                  <p className="list-content-text">64bit:</p>
+                  <Link className="list-content-link" to={"https://learn.microsoft.com/ru-ru/windows/win32/msi/windows-installer-on-64-bit-operating-systems"}>Installer</Link>
+                  <Link className="list-content-link" to={"https://www.7-zip.org/download.html"}>ZIP</Link>
                 </div>
                 <p className="Registration__getting-1-text3">
                   Поддерживаемые версии Windows - 7 и выше.
@@ -65,8 +65,8 @@ const Downloads = () => {
 
 
               </Col>
-              <Col className="Registration__getting3">
-                <div className="Registration__getting-img">
+              <Col className="Registration__getting5">
+                <div className="Registration__getting-img4">
                   <img
                     src={linux}
                     alt="error"
@@ -76,34 +76,38 @@ const Downloads = () => {
                   STABLE RELEASE
                 </h1>
                 <div>
-                  <div>
-                    <ul>
-                      <li>arm</li>
+                  <div className="ul-lists">
+                    <ul className="ul-list">
                       <li>
-                        <p>32bit:</p>
-                        <Link>Tarball</Link>
+                        <p className="list-title">arm</p>
                       </li>
-                      <li>
-                        <p>64bit:</p>
-                        <Link>Tarball</Link>
+                      <li className="list-content">
+                        <p className="list-content-text">32bit:</p>
+                        <Link className="list-content-link" to={"https://archlinux.org/?ref=itsfoss.com"}>Tarball</Link>
+                      </li>
+                      <li className="list-content">
+                        <p className="list-content-text">64bit:</p>
+                        <Link className="list-content-link" to={"https://developer.arm.com/downloads/-/gnu-rm"}>Tarball</Link>
                       </li>
                     </ul>
-                    <ul>
-                      <li>x86</li>
-                      <li>
-                        <p>32bit:</p>
-                        <Link>Tarball</Link>
+                    <ul className="ul-list">
+                      <li className="list-title">
+                        <p>x86</p>
                       </li>
-                      <li>
-                        <p>64bit:</p>
-                        <Link>Tarball</Link>
+                      <li className="list-content">
+                        <p className="list-content-text">32bit:</p>
+                        <Link className="list-content-link" to={"https://www.nvidia.com/Download/driverResults.aspx/196251/ru/"}>Tarball</Link>
+                      </li>
+                      <li className="list-content">
+                        <p className="list-content-text">64bit:</p>
+                        <Link className="list-content-link" to={"https://docs.platformio.org/en/latest/platforms/linux_x86_64.html"}>Tarball</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
               </Col>
-              <Col className="Registration__getting3">
-                <div className="Registration__getting-img">
+              <Col className="Registration__getting5">
+                <div className="Registration__getting-img3">
                   <img
                     src={mac}
                     alt="error"
@@ -112,18 +116,18 @@ const Downloads = () => {
                 <h1 className="Registration__getting-title2">
                   STABLE RELEASE
                 </h1>
-                <div>
-                  <p>64bit:</p>
-                  <Link>Installer</Link>
-                  <Link>Tarball</Link>
+                <div className="list-content">
+                  <p className="list-content-text">64bit:</p>
+                  <Link className="list-content-link" to={"https://support.apple.com/ru-ru/102662"}>Installer</Link>
+                  <Link className="list-content-link" to={"https://support.apple.com/ru-ru/109033"}>Tarball</Link>
                 </div>
                 <p className="Registration__getting-1-text3">
                   Поддерживаемые версии macOS - 10.10 и выше.
                 </p>
 
               </Col>
-              <Col className="Registration__getting3">
-                <div className="Registration__getting-img">
+              <Col className="Registration__getting5">
+                <div className="Registration__getting-img3">
                   <img
                     src={android}
                     alt="error"
@@ -133,39 +137,45 @@ const Downloads = () => {
                   STABLE RELEASE
                 </h1>
                 <div>
-                  <div>
-                    <ul>
+                  <div className="ul-lists">
+                    <ul className="ul-list">
                       <li>
                         <img
+                        className="list-img"
                           src={appStore}
                           alt="error"
                         />
                       </li>
                       <li>
                         <img
+                        className="list-img"
                           src={qr}
                           alt="error"
                         />
                       </li>
                       <li>
-                        <p>Для iOS и Android</p>
+                        <p className="Registration__getting-1-text3">Для iOS и Android</p>
 
                       </li>
                     </ul>
-                    <ul>
+                    <ul className="ul-list">
                       <li>
-                        <img
+                        <img 
+                        className="list-img"
                           src={googlePlay}
                           alt="error"
                         />
                       </li>
                       <li>
                         <Button className="Registration__getting-button3">
-                          APK
+                          <Link to={"https://apkpure.com/ru/apkpure/com.apkpure.aegon"}>
+                            APK
+                          </Link>
+
                         </Button>
                       </li>
                       <li>
-                        <p>Скачать APK (только для  Android)</p>
+                        <p className="Registration__getting-1-text3">Скачать APK (только для  Android)</p>
                       </li>
                     </ul>
                   </div>

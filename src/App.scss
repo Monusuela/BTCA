@@ -558,13 +558,26 @@
 
 }
 
-.Steps__Registration2 {
-    gap: 30px;
+// .Registration__getting-list{
+//     gap: 30px;
+    
+// }
+
+.Registration__getting{
+    list-style-type: none;
 }
 
 .Regiration3 {
     display: flex;
     justify-content: center;
+}
+
+.Steps__Registration4{
+    display: flex;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    gap: 30px;
 }
 
 .Registration__getting {
@@ -612,13 +625,78 @@
         gap: 20px;
     }
 
+    &5 {
+        margin-top: 20px;
+        padding: 20px;
+        // height: 290px;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.126);
+        gap: 20px;
+
+        border-radius: 16px;
+        width: 540px;
+        // height: 290px;
+
+        .ul-lists{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            // padding-left: 30px;
+
+            .ul-list{
+                list-style-type: none;
+
+                .list-title{
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                .list-img{
+                    padding-top: 20px;
+                }
+
+                .list-img2{
+                    padding-top: 15px;
+                }
+            }
+            
+            
+        }
+
+        
+
+        .list-content{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            font-size: 16px;
+            padding-top: 20px;
+
+            &-link{
+                color: #1D9A6D;
+                text-decoration-line: underline;
+            }
+
+            &-text{
+                color: #fff;
+            }
+        }
+    }
+
 
 
     &-img {
         padding-left: 120px;
     }
+    &-img3 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    &-img4 {
+        text-align: center;
+    }
 
-    &-img2{
+    &-img2 {
         padding-top: 30px;
         padding-left: 120px;
     }
@@ -664,6 +742,7 @@
         color: #fff;
         text-align: center;
     }
+
     &-title3 {
         color: #fff;
         text-align: center;
@@ -885,7 +964,7 @@
 
 
         }
-        
+
 
         .case {
             display: flex;
@@ -1635,8 +1714,11 @@
         display: flex;
         justify-content: center;
     }
+    .Steps__Registration4 {
+        padding-top: 200px;
+    }
 
-    .Steps3{
+    .Steps3 {
         padding-top: 220px;
     }
 

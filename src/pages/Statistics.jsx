@@ -1,117 +1,207 @@
 import { Fragment } from "react"
 import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
-import { Col, Flex } from "antd"
+import { Button, Col, Flex, Row } from "antd"
 import Frame from "../images/Frame.png"
 import birj from "../images/birj.png"
+import { Link } from "react-router-dom"
 
 const Statistics = () => {
-    return( 
-        <Fragment>
-            <section className="section__main-5">
-                <Container className={"container__left3"}>
-                    <Flex className="banner-2" style={{ color: "#fff" }}>
-                        <Col span={11} className="banner-2">
-                            <h1 className="banner-2-title">
-                            Бирж
-                            </h1>
-                            <p className="banner-2-text">
-                            BTCA  доступен на следующих биржах и сервисах
-                            </p>
-                        </Col>
+  return (
+    <Fragment>
+      <section className="section__main-5">
+        <Container className={"container__left3"}>
+          <Flex className="banner-2" style={{ color: "#fff" }}>
+            <Col span={11} className="banner-2">
+              <h1 className="banner-2-title">
+                Бирж
+              </h1>
+              <p className="banner-2-text">
+                BTCA  доступен на следующих биржах и сервисах
+              </p>
+            </Col>
 
-                        <div className="Home_header_img2">
+            <div className="Home_header_img2">
 
-                            <img className="Home_header_img2-birj"
-                                src={birj}
-                                alt="error"
-                            />
-                        </div>
-                    </Flex>
-                </Container>
-                <Container className={"container-2"}>
-                    <div className="case-title">
-                        <h1>
-                            Increase
-                        </h1>
-                    </div>
-                    <Flex className="case">
+              <img className="Home_header_img2-birj"
+                src={birj}
+                alt="error"
+              />
+            </div>
+          </Flex>
+        </Container>
 
+        <Container className={"container-2"}>
+          <div className="case-title">
+            <h1>
+              Increase
+            </h1>
+          </div>
+          <Flex className="case">
+            <Flex className="Regiration3">
+              <Row className="Steps__Registration4">
+                <Col className="Registration__getting5">
+                  <div className="Registration__getting-img3">
+                    <img
+                      // src={}
+                      alt="error"
+                    />
+                    <img
+                      // src={}
+                      alt="error"
+                    />
 
-                        {/* <Flex className="case-block" >
-              <Row className="case_row">
-                <Col className="case_row-col1">
-                  <h1 className="case_row-col1-title" >Получить больше Владея малым</h1>
-                  <p  className="case_row-col1-text" >Независимо от того, являетесь ли вы разработчиком,
-                    мерчантом, конечным пользователем или покупателем окон,
-                    мы приветствуем вас в сообществе BTCA.</p>
-                </Col>
-                <Col className="case_row-col2">
-                  <div className="case_row-col2-content">
-                    <h1 className="case_row-col2-content-title">Согласованное Время Блока</h1>
-                    <img src={Icon1} alt="error" />
                   </div>
-                  <p className="case_row-col2-text">Фиксированный интервал между блоками составляет
-                    60 секунд. Протокол времени 2-ой версии значительно
-                    сокращает разброс фактического интервала между блоками.</p>
+                  <h1 className="Registration__getting-title2">
+                  Binance
+                  </h1>
+                  
+                  <p className="Registration__getting-1-text3">
+                  Buy & sell Crypto in minutes. Powerful crypto trading platform for those who mean business.
+                  </p>
+
+                  <div>
+                    <img className=""
+                    // src={}
+                    alt="error" 
+                    />
+                    <Link>Посетить</Link>
+                  </div>
+
+
                 </Col>
-                <Flex  className="case_row-cols">
-                  <Col className="case_row-cols-col3">
-                    <div  className="content">
-                      <h1>Безопасная Сеть</h1>
-                      <img src={Icon2} alt="error" />
-                    </div>
+                <Col className="Registration__getting5">
+                  <div className="Registration__getting-img3">
+                    <img
+                      // src={}
+                      alt="error"
+                    />
+                    <img
+                      // src={}
+                      alt="error"
+                    />
 
-                    <p className="cols-text">Распределенная сеть отдельных узлов обеспечивает проверку каждой
-                      транзакции и блока, добавляемого в блокчейн, гарантируя, что блоки
-                      и транзакции действительны.</p>
-                  </Col>
-                  <Col  className="case_row-cols-col4">
-                    <div className="content">
-                      <h1>Меньшее потребление энергии</h1>
-                      <img src={Icon3} alt="error" />
-                    </div>
+                  </div>
+                  <h1 className="Registration__getting-title2">
+                  CoinEx
+                  </h1>
+                  
+                  <p className="Registration__getting-1-text3">
+                  CoinEx supports multiple languages like Chinese, English, Japanese, 
+                  Korean, Russian, etc. and are providing global trading services in over 100 countries/regions.
+                  </p>
 
-                    <p className="cols-text">Фиксированный интервал между блоками составляет 60 секунд.
-                      Протокол времени 2-ой версии значительно сокращает разброс
-                      фактического интервала между блоками.</p>
-                  </Col>
-                  <Col className="case_row-cols-col5">
-                    <div className="content">
-                      <h1>Честный Стекинг</h1>
-                      <img src={Icon4} alt="error" />
-                    </div>
+                  <div>
+                    <img className=""
+                    // src={}
+                    alt="error" 
+                    />
+                    <Link>Посетить</Link>
+                  </div>
 
-                    <p className="cols-text">У каждого UTXO есть шанс выиграть ставку
-                      с линейным снижением сложности в зависимости от ценности UTXO. </p>
-                  </Col>
-                </Flex>
+
+                </Col>
+                <Col className="Registration__getting5">
+                  <div className="Registration__getting-img3">
+                    <img
+                      // src={}
+                      alt="error"
+                    />
+                    <img
+                      // src={}
+                      alt="error"
+                    />
+
+                  </div>
+                  <h1 className="Registration__getting-title2">
+                  KuCoin
+                  </h1>
+                  
+                  <p className="Registration__getting-1-text3">
+                  KuCoin Instant Exchange is a one-click crypto exchange 
+                  service co-developed by KuCoin and the top HFT firm in Wall Street.
+                  </p>
+
+                  <div>
+                    <img className=""
+                    // src={}
+                    alt="error" 
+                    />
+                    <Link>Посетить</Link>
+                  </div>
+
+
+                </Col>
+                <Col className="Registration__getting5">
+                  <div className="Registration__getting-img3">
+                    <img
+                      // src={}
+                      alt="error"
+                    />
+                    <img
+                      // src={}
+                      alt="error"
+                    />
+
+                  </div>
+                  <h1 className="Registration__getting-title2">
+                  Bittrex
+                  </h1>
+                  
+                  <p className="Registration__getting-1-text3">
+                  Bittrex Global is one of the most secure trading platforms in the world.
+                  </p>
+
+                  <div>
+                    <img className=""
+                    // src={}
+                    alt="error" 
+                    />
+                    <Link>Посетить</Link>
+                  </div>
+
+
+                </Col>
+                
+
               </Row>
+            </Flex>
+            <Flex>
+              <div>
+                <div>
+                  <Button>ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ</Button>
+                  <p>Обратите внимание, что перечисленные сторонние услуги не одобрены BTCA и 
+                    предоставляются только в информационных целях. Пожалуйста, будьте осторожны 
+                    при использовании любых сторонних сервисов, поскольку это находится вне нашего контроля.</p>
+                </div>
+              </div>
+            </Flex>
+            <Flex className="frame-img">
+              <img src={Frame} alt="error" />
+            </Flex>
 
-            </Flex> */}
-
-                    </Flex>
+          </Flex>
 
 
-                    <Flex className="frame-img">
-                        <img src={Frame} alt="error" />
-                    </Flex>
-                </Container>
+          <Flex className="frame-img">
+            <img src={Frame} alt="error" />
+          </Flex>
+        </Container>
 
 
 
 
 
-            </section>
-             <section className="section__main-7">
-                <Container>
-                    <div>
-                        {Subscribe()}
-                    </div>
-                </Container>
-            </section>
-        </Fragment>
-    )
+      </section>
+      <section className="section__main-7">
+        <Container>
+          <div>
+            {Subscribe()}
+          </div>
+        </Container>
+      </section>
+    </Fragment>
+  )
 }
 
 export default Statistics

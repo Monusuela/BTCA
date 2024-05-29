@@ -54,7 +54,7 @@ const Footer = () => {
                                 <Link to="/masternoads" className="Footer__winget-link">Мастерноды</Link>
                             </li>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Управление</Link>
+                                <Link to="/decstop" className="Footer__winget-link">Управление</Link>
                             </li>
                             <li>
                                 <Link to="/documents" className="Footer__winget-link">Экономика</Link>
@@ -96,7 +96,7 @@ const Footer = () => {
                         
                         <ul className={`list-none Footer__winget-list`}>
                             <li>
-                                <Link to={"#"} className="Footer__winget-link">Руководства</Link>
+                                <Link to="/mobile" className="Footer__winget-link">Руководства</Link>
                             </li>
                             <li>
                                 <Link to="/comment" className="Footer__winget-link">Форум</Link>

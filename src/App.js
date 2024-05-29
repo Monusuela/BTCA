@@ -24,6 +24,9 @@ import Community from "./pages/Community";
 import News from "./pages/News";
 import Why from "./pages/Why";
 import Comment from "./pages/Support";
+import Decstop from "./pages/Decstop";
+import Team from "./pages/Team";
+import Mobile from "./pages/Mobile";
 
 // import { BsCurrencyBitcoin } from "react-icons/bs";
 
@@ -49,7 +52,7 @@ const App = () => {
                 <Link className="header-main__menu-link" to={"/"} >Участие</Link>
                 <Link className="header-main__menu-link" to={"/"} >Ресурсы</Link>
                 <Link className="header-main__menu-link" to="/news" >Новости</Link>
-                <Link className="header-main__menu-link" to={"/"} >О BTCA</Link>
+                <Link className="header-main__menu-link" to="/team" >О BTCA</Link>
 
               </nav>
 
@@ -99,8 +102,12 @@ const App = () => {
 
           {/* <Route path="/comment" element={<Comment/>} /> */}
 
-          {/* <Route path="/" element={} /> */}
+          <Route path="/decstop" element={<Decstop/>} />
 
+          <Route path="/team" element={<Team/>} />
+
+          <Route path="/mobile" element={<Mobile/>} />
+          
           {/* <Route path="/" element={} /> */}
 
           {/* <Route path="/" element={} /> */}

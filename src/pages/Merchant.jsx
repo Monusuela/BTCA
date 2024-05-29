@@ -16,11 +16,11 @@ const Merchant = () => {
           <Flex className="banner-2" style={{ color: "#fff" }}>
             <Col span={11} className="banner-2">
               <h1 className="banner-2-title">
-              Мерчант
+                Мерчант
               </h1>
               <p className="banner-2-text">
-              Идите в ногу с новейшими технологиями и начните получать 
-              новые источники дохода от глобального сообщества пользователей BTCA
+                Идите в ногу с новейшими технологиями и начните получать
+                новые источники дохода от глобального сообщества пользователей BTCA
               </p>
             </Col>
 
@@ -40,59 +40,55 @@ const Merchant = () => {
             </h1>
           </div>
           <Flex className="case">
-
-
-            {/* <Flex className="case-block" >
+            <Flex className="case-block" >
               <Row className="case_row">
                 <Col className="case_row-col1">
-                  <h1 className="case_row-col1-title" >Получить больше Владея малым</h1>
-                  <p  className="case_row-col1-text" >Независимо от того, являетесь ли вы разработчиком,
-                    мерчантом, конечным пользователем или покупателем окон,
-                    мы приветствуем вас в сообществе BTCA.</p>
+                  <h1 className="case_row-col1-title" >
+                    Просто, Быстро и Безопасно</h1>
+                  <p className="case_row-col1-text" >
+                  Рассматриваете альтернативные способы оплаты устаревшим? 
+                  Вот 4 причины, по которым BTCA - лучший альтернативный способ приема платежей.
+                    </p>
                 </Col>
                 <Col className="case_row-col2">
                   <div className="case_row-col2-content">
-                    <h1 className="case_row-col2-content-title">Согласованное Время Блока</h1>
-                    <img src={Icon1} alt="error" />
+                    <h1 className="case_row-col2-content-title">
+                    Решения с открытым исходным кодом
+                      </h1>
+                    <img
+                      // src={} 
+                      alt="error" />
                   </div>
-                  <p className="case_row-col2-text">Фиксированный интервал между блоками составляет
-                    60 секунд. Протокол времени 2-ой версии значительно
-                    сокращает разброс фактического интервала между блоками.</p>
+                  <p className="case_row-col2-text">
+                  Интегрируйте методы оплаты, разработанные  BTCA, легко и совершенно бесплатно, 
+                  потому что код  BTCA полностью открыт любому пользователю. осуществления транзакции.кошелька
+                    </p>
                 </Col>
                 <Flex  className="case_row-cols">
-                  <Col className="case_row-cols-col3">
-                    <div  className="content">
-                      <h1>Безопасная Сеть</h1>
-                      <img src={Icon2} alt="error" />
-                    </div>
+                <Col className="case_row-cols-col3">
+                  <div className="content">
+                    <h1>Низкие затраты на платежи</h1>
+                    <img
+                      // src={} 
+                      alt="error" />
+                  </div>
 
-                    <p className="cols-text">Распределенная сеть отдельных узлов обеспечивает проверку каждой
-                      транзакции и блока, добавляемого в блокчейн, гарантируя, что блоки
-                      и транзакции действительны.</p>
-                  </Col>
-                  <Col  className="case_row-cols-col4">
-                    <div className="content">
-                      <h1>Меньшее потребление энергии</h1>
-                      <img src={Icon3} alt="error" />
-                    </div>
+                  <p className="cols-text">Комиссия за транзакцию мизерна и чаще всего ниже 0,01 доллара США.</p>
+                </Col>
+                <Col className="case_row-cols-col4">
+                  <div className="content">
+                    <h1>Мгновенные платежи</h1>
+                    <img
+                      // src={} 
+                      alt="error" />
+                  </div>
 
-                    <p className="cols-text">Фиксированный интервал между блоками составляет 60 секунд.
-                      Протокол времени 2-ой версии значительно сокращает разброс
-                      фактического интервала между блоками.</p>
-                  </Col>
-                  <Col className="case_row-cols-col5">
-                    <div className="content">
-                      <h1>Честный Стекинг</h1>
-                      <img src={Icon4} alt="error" />
-                    </div>
-
-                    <p className="cols-text">У каждого UTXO есть шанс выиграть ставку
-                      с линейным снижением сложности в зависимости от ценности UTXO. </p>
-                  </Col>
+                  <p className="cols-text">Благодаря сети BTCA получайте мгновенные платежи (в течение одной минуты).</p>
+                </Col>
                 </Flex>
               </Row>
+            </Flex>
 
-            </Flex> */}
 
           </Flex>
 

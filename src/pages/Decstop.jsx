@@ -100,7 +100,7 @@ const Decstop = () => {
                 </Container>
             </section>
             <section className="section__main-5">
-                <Container className={"container-3"}>
+                <Container className={"container-4"}>
 
                     <Flex className="Steps2">
                         <div>

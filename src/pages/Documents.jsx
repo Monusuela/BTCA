@@ -49,17 +49,16 @@ const Documents = () => {
 
           <Flex className="Regiration3">
             <Row className="Steps__Registration2">
-              <Col className="Registration__getting3">
+              <Col className="Registration__getting6">
 
-                <h1 className="Registration__getting-title2">
-                  Активное автономное решение
+                <h1 className="Registration__getting-title6">
+                С материалами для СМИ
                 </h1>
                 <p className="Registration__getting-1-text3">
-                  После делегирования ваш холодный кошелек и закрытые ключи для использования
-                  BTCA не обязаны оставаться в сети до тех пор, пока вы не решите их потратить.
+                Выбирайте, печатайте и размещайте предпочтительные материалы для вашего местного бизнеса.
                 </p>
-                <div>
-                    <Button>
+                <div className="button-content">
+                    <Button className="Registration__getting-button6">
                     <img
                     // src={}
                     alt="error"
@@ -68,17 +67,17 @@ const Documents = () => {
                     </Button>
                   </div>
               </Col>
-              <Col className="Registration__getting3">
+              <Col className="Registration__getting6">
 
-                <h1 className="Registration__getting-title2">
-                  Минимальные требования к оборудованию
+                <h1 className="Registration__getting-title6">
+                По Экономике BTCA
                 </h1>
                 <p className="Registration__getting-1-text3">
-                  Большинство настольных компьютеров, ноутбуков соответствуют требованиям,
-                  необходимым для запуска горячего кошелька для холодного стекинга </p>
+                Ознакомьтесь с академической документацией об экономике монет BTCA, 
+                ее денежно-кредитной политике и экономических факторах, стоящих за монетой. </p>
 
-                  <div>
-                    <Button>
+                  <div className="button-content">
+                    <Button className="Registration__getting-button5">
                     <img
                     // src={}
                     alt="error"
@@ -87,17 +86,17 @@ const Documents = () => {
                     </Button>
                   </div>
               </Col>
-              <Col className="Registration__getting3">
+              <Col className="Registration__getting6">
 
-                <h1 className="Registration__getting-title2">
-                  Экономия Энергии
+                <h1 className="Registration__getting-title6">
+                Развития
                 </h1>
                 <p className="Registration__getting-1-text3">
-                  Несколько холодных кошельков могут делегировать BTCA одному горячему кошельку,
-                  уменьшая потребление энергии, необходимое для стекинга нескольких небольших балансов кошелька
+                Дорожная карта развития предоставляет подробную информацию 
+                о предстоящих (краткосрочных и долгосрочных) разработках BTCA. 
                 </p>
-                <div>
-                    <Button>
+                <div className="button-content">
+                    <Button className="Registration__getting-button4">
                     <img
                     // src={}
                     alt="error"

@@ -1,7 +1,6 @@
 import { Fragment } from "react"
 import Container from "../components/container"
-import { Button, Col, Flex, Input, Row } from "antd"
-import Title from "antd/es/skeleton/Title"
+import { Button, Col, Flex, Row } from "antd"
 import { Link } from "react-router-dom"
 import chips from "../images/chips.png"
 import Icon1 from "../images/ikon/Frame 118.png"

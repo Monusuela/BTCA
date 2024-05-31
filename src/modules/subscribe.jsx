@@ -1,5 +1,4 @@
 import { Button, Col, Flex, Input } from "antd";
-import Title from "antd/es/skeleton/Title";
 import axios from "axios";
 import { Fragment, useEffect, useState } from "react"
 import { Link } from "react-router-dom";
@@ -42,12 +41,12 @@ const Subscribe = () => {
             разработках BTCA.
           </p>
           <Flex className="Block-area-2" >
-            {data?.map((email) => {
+            {data?.map((email, index) => {
               return (
-                <div>
+                <div key={index}>
                   <Input className="Block-area-2-input"
 
-                    type="Email"
+                    type="email"
                     placeholder={"Ваш e-mail"}
                     value={userEmail}
                     onChange={(e) => setUserEmail(e.target.value)}

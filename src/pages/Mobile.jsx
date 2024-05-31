@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
-import { Button, Col, Flex, Row } from "antd"
+import { Button, Col, Flex } from "antd"
 import android from "../images/android.png"
 import appStore from "../images/app-store.png"
 import googlePlay from "../images/google-play.png"

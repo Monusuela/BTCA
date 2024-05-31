@@ -3,7 +3,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
-import { MdFiberManualRecord } from 'react-icons/md';
 import Title from 'antd/es/typography/Title';
 import { Col } from 'antd';
 import Container from './container';

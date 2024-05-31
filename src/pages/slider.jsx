@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+// import {React} from "react";
 import arrow from "../images/arrow.png";
 import world from "../images/world.png";
 import gears from "../images/gears.png";

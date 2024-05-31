@@ -1,6 +1,6 @@
 import {Fragment} from "react";
 import Container from "../components/container";
-import {Space, Typography} from "antd";
+import {Space} from "antd";
 import { Helmet } from "react-helmet";
 
 const NotFound = () => {
@@ -14,11 +14,11 @@ const NotFound = () => {
                   <Space className={`NotFound__content`}>
 
                       <div className="NotFound__content" >
-                          <h1 level={1} className="NotFound__content-text1">
+                          <h1 className="NotFound__content-text1">
                               Not Found 404
                           </h1>
 
-                          <h1 bodyText={"p"} className="NotFound__content-text2" >OOOOO NO!!!!</h1>
+                          <h1 className="NotFound__content-text2" >OOOOO NO!!!!</h1>
                       </div>
                   </Space>
               </Container>

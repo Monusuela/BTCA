@@ -2,7 +2,7 @@ import { Fragment } from "react"
 import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import ControlledAccordions from "../components/Category"
-import { Button, Col, Flex, Row } from "antd"
+import { Col, Flex, Row } from "antd"
 import Frame from "../images/Frame.png"
 import shield1 from "../images/shield1.png"
 

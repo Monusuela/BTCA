@@ -1,14 +1,11 @@
 import { Fragment } from "react";
 import Container from "../components/container";
-import { Button, Row, Col, Flex, Input, Carousel } from "antd";
+import { Button, Row, Col, Flex } from "antd";
 import { TfiAndroid, TfiApple, TfiLinux } from "react-icons/tfi";
 import { RiWindowsFill } from "react-icons/ri";
 import Title from "antd/es/typography/Title";
 import planet from "../images/planet.png";
 import bitcoin from "../images/bitcoin.png";
-import arrow from "../images/arrow.png";
-import world from "../images/world.png";
-import gears from "../images/gears.png";
 import google from "../images/icon/Google.png";
 import yahoo from "../images/icon/Yahoo.png";
 import wecar from "../images/icon/WeCar.png";

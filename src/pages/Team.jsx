@@ -1,7 +1,6 @@
 import { Fragment } from "react"
 import Container from "../components/container"
-import Subscribe from "../modules/subscribe"
-import { Button, Col, Flex, Row } from "antd"
+import { Col, Flex, Row } from "antd"
 import furszy1 from "../images/people/furszy1.png"
 import furszy2 from "../images/people/furszy2.png"
 import furszy3 from "../images/people/furszy3.png"

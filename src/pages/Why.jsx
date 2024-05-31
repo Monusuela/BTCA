@@ -2,7 +2,6 @@ import { Fragment } from "react"
 import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex, Row } from "antd"
-import Frame from "../images/Frame.png"
 import frame2 from "../images/Frame 120.png"
 import why from "../images/why.png"
 

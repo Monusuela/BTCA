@@ -1,13 +1,11 @@
 import { Fragment } from "react";
 import Container from "../components/container";
 import "./layout.scss";
-import { Button, Col, Flex, Input, Row, Typography} from "antd";
+import { Button, Col, Flex, Input, Row} from "antd";
 import { TfiAndroid, TfiApple, TfiLinux } from "react-icons/tfi";
 import { RiWindowsFill } from "react-icons/ri";
 import Title from "antd/es/typography/Title";
 import { Link } from "react-router-dom";
-import ProofOfStake from "../pages/ProofOfStake"
-import { Content } from "antd/es/layout/layout";
 
 
 

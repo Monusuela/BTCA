@@ -1,8 +1,6 @@
 import { Button, Input } from "antd";
 import axios from "axios";
 import { Fragment, useState } from "react";
-import emailjs from '@emailjs/browser';
-import { useForm } from "antd/es/form/Form";
 
 
 const QuestionsForm = () => {

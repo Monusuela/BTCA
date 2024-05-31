@@ -5,7 +5,7 @@ import { Col, Flex } from "antd"
 import catting from "../images/Chatting.png"
 import abstract from "../images/3Dabstract.png"
 import { Swiper,SwiperSlide } from "swiper/react"
-// import { EffectCoverflow, Pagination, Navigation } from "swiper/modules"
+import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
@@ -14,6 +14,7 @@ import facebook from "../images/swiper-icon/facebook.png"
 import twitter from "../images/swiper-icon/twitter.png"
 import discord from "../images/swiper-icon/discord.png"
 import instagram from "../images/swiper-icon/instagram.png"
+import { Scrollbar, Navigation, Pagination } from "swiper/modules"
 
 const Community = () => {
 
@@ -44,7 +45,7 @@ const Community = () => {
                     </Flex>
                 </Container>
                 <Container>
-                    <div className="container">
+                    <div className="container-sl">
                       <Swiper 
                       effect={'coverflow'}
                       grabCursor={true}
@@ -59,10 +60,17 @@ const Community = () => {
                           modifier: 2.5,
                         }
                       }
+                      pagination={{el: ".swider-pagination", clickable:true}}
+                      navigation={{
+                        nextEl: "swiper-button-next",
+                        prevEl: "swiper-button-prev",
+                        clickable: true,
+                      }}
+                      modules={[Scrollbar, Pagination, Navigation]}
                       className="swiper-container"
                       >
-                        <SwiperSlide>
-                          <div>
+                        <SwiperSlide className="slide">
+                          <div className="slide-image">
                             <div>
                               <img 
                               src={github}
@@ -71,8 +79,8 @@ const Community = () => {
                             </div>
                           </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                          <div>
+                        <SwiperSlide className="slide">
+                          <div className="slide-image">
                             <div>
                               <img 
                               src={facebook}
@@ -81,8 +89,8 @@ const Community = () => {
                             </div>
                           </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                          <div>
+                        <SwiperSlide className="slide">
+                          <div className="slide-image">
                             <div>
                               <img 
                               src={discord}
@@ -91,8 +99,8 @@ const Community = () => {
                             </div>
                           </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                          <div>
+                        <SwiperSlide className="slide">
+                          <div className="slide-image">
                             <div>
                               <img 
                               src={twitter}
@@ -101,8 +109,8 @@ const Community = () => {
                             </div>
                           </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                          <div>
+                        <SwiperSlide className="swiper-slide">
+                          <div className="slide-image">
                             <div>
                               <img 
                               src={instagram}

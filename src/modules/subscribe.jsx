@@ -8,8 +8,21 @@ const Subscribe = () => {
   const [userEmail, setUserEmail] = useState("")
   const [data, setData] = useState([])
 
+  const onSubmit = (e) =>{
+    e.preventDefault();
+
+    axios.post("http://localhost:9000/email", {
+      email: userEmail
+    }).then(() =>{
+      alert("ok")
+    }).catch(error =>{
+      alert(error?.message)
+    })
+      
+  }
+
   useEffect(() => {
-    axios.get("http://localhost:3000/email")
+    axios.get("http://localhost:9000/email")
       .then((res) => {
 
         setData(res.data)
@@ -41,30 +54,19 @@ const Subscribe = () => {
             разработках BTCA.
           </p>
           <Flex className="Block-area-2" >
-            {data?.map((email, index) => {
-              return (
-                <div key={index}>
-                  <Input className="Block-area-2-input"
+            <form onSubmit={onSubmit}>
+              <Input className="Block-area-2-input"
 
-                    type="email"
-                    placeholder={"Ваш e-mail"}
-                    value={userEmail}
-                    onChange={(e) => setUserEmail(e.target.value)}
-                  >{email?.taste}</Input>
-                  <div className="">
-                    <Button
-                      key={email.id}
-                      id={email.id}
-                      email={email.email}
-                      className="Block-area-2-button"
-                      onClick={addSubscribe}
-                    >
-                      <Link to="/questions">Подписаться</Link>
-                    </Button>
-                  </div>
-                </div>
-              )
-            })}
+                type="email"
+                placeholder={"Ваш e-mail"}
+                value={userEmail}
+                onChange={(e) => setUserEmail(e.target.value)}
+                required
+              />
+              <div className="">
+                <button type="submit" className="Block-area-2-button">Подписаться</button>
+              </div>
+            </form>
           </Flex>
         </Col>
       </Flex>) : (

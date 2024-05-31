@@ -2,11 +2,21 @@ import { Fragment } from "react"
 import Container from "../components/container"
 import Subscribe from "../modules/subscribe"
 import { Col, Flex } from "antd"
-import Frame from "../images/Frame.png"
 import catting from "../images/Chatting.png"
 import abstract from "../images/3Dabstract.png"
+import { Swiper,SwiperSlide } from "swiper/react"
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules"
+import "swiper/css/effect-coverflow"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+import github from "../images/swiper-icon/github.png"
+import facebook from "../images/swiper-icon/facebook.png"
+import twitter from "../images/swiper-icon/twitter.png"
+import discord from "../images/swiper-icon/discord.png"
+import instagram from "../images/swiper-icon/instagram.png"
 
 const Community = () => {
+
     return( 
         <Fragment>
             <section className="section__main-5">
@@ -33,73 +43,86 @@ const Community = () => {
                         </div>
                     </Flex>
                 </Container>
-                <Container className={"container-2"}>
-                    <div className="case-title">
-                        <h1>
-                            Increase
-                        </h1>
+                <Container>
+                    <div className="container">
+                      <Swiper 
+                      effect={'coverflow'}
+                      grabCursor={true}
+                      centeredSlides={true}
+                      loop={true}
+                      slidesPerView={"auto"}
+                      coverflowEffect={
+                        {
+                          rotate: 0,
+                          stretch: 0,
+                          depth: 100,
+                          modifier: 2.5,
+                        }
+                      }
+                      className="swiper-container"
+                      >
+                        <SwiperSlide>
+                          <div>
+                            <div>
+                              <img 
+                              src={github}
+                              alt="error"/>
+                              <p>GitHub</p>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div>
+                            <div>
+                              <img 
+                              src={facebook}
+                              alt="error"/>
+                              <p>Facebook</p>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div>
+                            <div>
+                              <img 
+                              src={discord}
+                              alt="error"/>
+                              <p>Discord</p>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div>
+                            <div>
+                              <img 
+                              src={twitter}
+                              alt="error"/>
+                              <p>Twitter</p>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div>
+                            <div>
+                              <img 
+                              src={instagram}
+                              alt="error"/>
+                              <p>Instagram</p>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+
+                        <div className="slider-controler">
+                          <div className="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                          </div>
+                          <div className="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                          </div>
+                          <div className="swider-pagination"></div>
+                        </div>
+                      </Swiper>
                     </div>
-                    <Flex className="case">
-
-
-                        {/* <Flex className="case-block" >
-              <Row className="case_row">
-                <Col className="case_row-col1">
-                  <h1 className="case_row-col1-title" >Получить больше Владея малым</h1>
-                  <p  className="case_row-col1-text" >Независимо от того, являетесь ли вы разработчиком,
-                    мерчантом, конечным пользователем или покупателем окон,
-                    мы приветствуем вас в сообществе BTCA.</p>
-                </Col>
-                <Col className="case_row-col2">
-                  <div className="case_row-col2-content">
-                    <h1 className="case_row-col2-content-title">Согласованное Время Блока</h1>
-                    <img src={Icon1} alt="error" />
-                  </div>
-                  <p className="case_row-col2-text">Фиксированный интервал между блоками составляет
-                    60 секунд. Протокол времени 2-ой версии значительно
-                    сокращает разброс фактического интервала между блоками.</p>
-                </Col>
-                <Flex  className="case_row-cols">
-                  <Col className="case_row-cols-col3">
-                    <div  className="content">
-                      <h1>Безопасная Сеть</h1>
-                      <img src={Icon2} alt="error" />
-                    </div>
-
-                    <p className="cols-text">Распределенная сеть отдельных узлов обеспечивает проверку каждой
-                      транзакции и блока, добавляемого в блокчейн, гарантируя, что блоки
-                      и транзакции действительны.</p>
-                  </Col>
-                  <Col  className="case_row-cols-col4">
-                    <div className="content">
-                      <h1>Меньшее потребление энергии</h1>
-                      <img src={Icon3} alt="error" />
-                    </div>
-
-                    <p className="cols-text">Фиксированный интервал между блоками составляет 60 секунд.
-                      Протокол времени 2-ой версии значительно сокращает разброс
-                      фактического интервала между блоками.</p>
-                  </Col>
-                  <Col className="case_row-cols-col5">
-                    <div className="content">
-                      <h1>Честный Стекинг</h1>
-                      <img src={Icon4} alt="error" />
-                    </div>
-
-                    <p className="cols-text">У каждого UTXO есть шанс выиграть ставку
-                      с линейным снижением сложности в зависимости от ценности UTXO. </p>
-                  </Col>
-                </Flex>
-              </Row>
-
-            </Flex> */}
-
-                    </Flex>
-
-
-                    <Flex className="frame-img">
-                        <img src={Frame} alt="error" />
-                    </Flex>
                 </Container>
 
 
